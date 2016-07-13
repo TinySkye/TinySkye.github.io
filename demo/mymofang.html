@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的3D魔方</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.outer{
+		width: 100%;
+		height: 100%;
+	}
+
+	/*文字部分*/
+	.part-one{
+		position: absolute;
+		width: 50%;
+		height: 50%;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	.text{
+		width: 50%;
+		margin-top: -80px;
+		font-size: 20px;
+		font-weight: bold;
+		-webkit-animation: txt-ani 5s ease-in-out infinite;
+	}
+	@-webkit-keyframes txt-ani{
+		0%{
+			color: red;
+		}
+		25%{
+			-webkit-transform: translateX(165%) translateY(0);
+			color: yellow;
+		}
+		50%{
+			-webkit-transform: translateX(165%) translateY(1500%);
+			color: green;
+		}
+		75%{
+			-webkit-transform: translateX(0px) translateY(1500%);
+			color: blue;
+		}
+		100%{-webkit-transform: translateX(0px) translateY(0px);}
+	}
+
+
+	/*魔方部分*/
+	.box{
+		position: relative;
+		width: 180px;
+		height: 180px;
+		margin: 200px auto 0 auto;
+		-webkit-transform-style: preserve-3d;
+		-webkit-animation: animation 5s ease-in-out infinite;
+	}
+	
+	.box .face{
+		position: absolute;
+		width: 180px;
+		height: 180px;
+	}
+	#one{
+		-webkit-transform: translateZ(90px);
+	}
+	#two{
+		-webkit-transform: rotateX(-90deg) translateZ(90px);
+	}
+	#three{
+		-webkit-transform: rotateX(-180deg) translateZ(90px);
+	}
+	#four{
+		-webkit-transform: rotateX(90deg) translateZ(90px);
+	}
+	#five{
+		-webkit-transform: rotateY(-90deg) translateZ(90px);
+	}
+	#six{
+		-webkit-transform: rotateY(90deg) translateZ(90px);
+	}
+	.face div{
+		float: left;
+		margin: 2px 0 0 2px;
+		width: 58px;
+		height: 58px;
+		border-radius: 5px;
+		box-sizing: border-box;
+	}
+	.a{
+		background-color: red;
+	}
+	.b{
+		background-color: orange;
+	}
+	.c{
+		background-color: yellow;
+	}
+	.d{
+		background-color: green;
+	}
+	.e{
+		background-color: blue;
+	}
+	.f{
+		background-color: purple;
+	}
+	@-webkit-keyframes animation{
+		0%{}
+		16%{-webkit-transform: rotateX(-90deg) rotateY(90deg) rotateZ(0deg);}
+		33%{-webkit-transform: rotateX(90deg) rotateY(180deg) rotateZ(90deg);}
+		50%{-webkit-transform: rotateX(-90deg) rotateY(270deg) rotateZ(90deg);}
+		66%{-webkit-transform: rotateX(90deg) rotateY(180deg) rotateZ(0deg);}
+		83%{-webkit-transform: rotateX(-90deg) rotateY(90deg) rotateZ(-90deg);}
+		100%{}
+	}
+
+	
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="part-one">
+			<div class="text">我的3D魔方</div>
+		</div>
+		
+		<div class="box">
+			<div id="one" class="face">
+				<div class="a"></div>
+				<div class="a"></div>
+				<div class="a"></div>
+				<div class="a"></div>
+				<div class="a"></div>
+				<div class="a"></div>
+				<div class="a"></div>
+				<div class="a"></div>
+				<div class="a"></div>
+			</div>
+			<div id="two" class="face">
+				<div class="b"></div>
+				<div class="b"></div>
+				<div class="b"></div>
+				<div class="b"></div>
+				<div class="b"></div>
+				<div class="b"></div>
+				<div class="b"></div>
+				<div class="b"></div>
+				<div class="b"></div>
+			</div>
+			<div id="three" class="face">
+				<div class="c"></div>
+				<div class="c"></div>
+				<div class="c"></div>
+				<div class="c"></div>
+				<div class="c"></div>
+				<div class="c"></div>
+				<div class="c"></div>
+				<div class="c"></div>
+				<div class="c"></div>
+			</div>
+			<div id="four" class="face">
+				<div class="d"></div>
+				<div class="d"></div>
+				<div class="d"></div>
+				<div class="d"></div>
+				<div class="d"></div>
+				<div class="d"></div>
+				<div class="d"></div>
+				<div class="d"></div>
+				<div class="d"></div>
+			</div>
+			<div id="five" class="face">
+				<div class="e"></div>
+				<div class="e"></div>
+				<div class="e"></div>
+				<div class="e"></div>
+				<div class="e"></div>
+				<div class="e"></div>
+				<div class="e"></div>
+				<div class="e"></div>
+				<div class="e"></div>
+			</div>
+			<div id="six" class="face">
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+				<div class="f"></div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
