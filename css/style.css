@@ -471,7 +471,7 @@ a {
 .header-author {
   text-align: center;
   margin: 0.67em 0;
-  font-family: Roboto, "Roboto", serif;
+  font-family: inherit;
   font-size: 30px;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -498,7 +498,7 @@ a {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background: #88acdb;
+  background-color: #696969;
   -webkit-transition: all 0.2s ease-in;
   display: -webkit-box;
   -webkit-box-orient: horizontal;
@@ -1625,12 +1625,12 @@ pre .css ~ * .id {
   color: #fd971f;
 }
 #footer {
-  font-size: 12px;
+  font-size: 13px;
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
   text-shadow: 0 1px #fff;
   position: absolute;
   bottom: 30px;
-  opacity: 0.6;
+  opacity: 0.8;
   width: 100%;
   text-align: center;
 }
