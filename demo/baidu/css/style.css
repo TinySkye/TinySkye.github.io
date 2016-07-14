@@ -1,0 +1,289 @@
+    *{
+        padding:0;margin:0;
+    }
+   
+    html{
+        height: 100%;
+        width: 100%;
+        }
+   
+    div {display: block; }
+    
+    body {
+         font: 12px arial;
+         text-align: center;
+         background: #fff;
+         height: 100%;
+         width: 100%;
+         min-height: 600px;
+         min-width: 1000px;
+         display: block;
+         position: relative;
+         list-style: none;
+         overflow:hidden;
+         behavior:url(css/csshover.htc);
+         }
+
+    form {
+         display: block;
+         margin-top: 0em;
+        }
+
+    a  { color: #00c; }
+
+    p {
+        display: block;
+        -webkit-margin-before: 1em;
+        -webkit-margin-after: 1em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        }
+    
+    #mobile_page{
+        display: none;
+    }
+    #u1 {                                             /*导航栏*/
+         z-index: 2;
+         color: white;
+         position: absolute;
+         right: 0;
+         top: 0;
+         margin: 19px 0 5px 0;
+         padding: 0 96px 0 0;
+        }
+    #u1 a.mnav{
+         float: left;
+         color: #333;
+         font-weight: bold;
+         line-height: 24px;
+         margin-left: 20px;
+         font-size: 13px;
+        text-decoration: underline;
+    }
+    #u1 a.lb {
+          display: inline-block;
+          float: left;
+          color: #333;
+          font-size: 13px;
+          line-height: 24px;
+          margin-left: 20px;
+          text-decoration: underline;
+         }
+    #u1 a.pf {
+         display: inline-block;
+         float: left;
+         color: #333;
+         line-height: 24px;
+         font-size: 13px;
+         margin-left: 20px;
+         overflow: hidden;
+         text-decoration: underline;
+    }
+    #u1 a.bri {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        width: 60px;
+        height: 23px;
+        float: left;
+        color: white;
+        background: #38f;
+        line-height: 24px;
+        font-size: 13px;
+        text-align: center;
+        overflow: hidden;
+        border-bottom: 1px solid #38f;
+        margin-left: 19px;
+        margin-right: 2px;
+        text-decoration:none;
+        display:block;
+    }
+    #u1 a:hover{
+        color: #00c;                /*导航栏变色*/
+              }
+    #head {
+            padding-bottom: 100px;
+            text-align: center;
+          }
+
+    .s_form {
+        position: relative;
+        top: 38.2%;
+        *top:20%;
+            }
+    
+    .s_form_w {
+        position: relative;
+        top: 183px;
+        *top:50px;
+              }
+    #form {
+        margin: 22px auto 0;
+        width: 644px;
+        *width:670px;
+        height: 37px;
+        text-align: left;
+        z-index: 100;
+        padding: 0;
+        list-style: none;
+        /*_text-align: left;*/
+    }
+
+    .quickdelete-wrap { position: relative;}
+
+    .quickdelete-wrap input { width: 520px;}
+
+    .s_ipt {
+        border: 1px solid #b6b6b6;
+        border-color: #C5BCBC #b6b6b6 #D1CBCB #C5BCBC;
+        background: #fff;
+        display: inline-block;
+        vertical-align: top;
+        width: 532px;
+        width: 500px\0;
+        height: 34px;
+        margin-top: 183px;
+        *top: 10%;
+        margin-left: 2px;
+        *margin-left:33%;
+        border-right-width: 0;
+        overflow: hidden;
+        position: relative;
+        padding-left: 7px;
+        font-size: 16px;
+        min-width: 1000px\9;
+        _line-height:30px;
+    }
+    .s_ipt:hover{
+        border-color: #989898 #b6b6b6 #b6b6b6 #989898;      /*输入框hover变深色*/
+        outline: none;
+        }
+
+    .s_ipt:focus{
+        border-color:  #5F9AFE;                               /*输入框点击变蓝色*/
+        outline: none;
+    }
+    .s_btn {
+        width: 100px;
+        height: 36px;
+        color: white;
+        font-size: 15px;
+        margin-top: 183px;
+        #margin-top:-13px;
+        margin-left: -3px;
+        #margin-left: 60%;
+        letter-spacing: 1px;
+        background: #3385ff;
+        border:#3385ff;
+        _background: #3385ff;
+        border-bottom: 1px solid #2d78f4;
+        outline: medium;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        background-position: 0 -48px;
+        cursor: pointer;
+        position: relative;
+      }
+    .s_btn:hover{
+        background: #297EFC;
+        font-size: 15px;
+    }
+    #su.bg {
+        background-image: none;
+    }
+    .bg {
+        background-image: url(../img/icons_8b5b2ea9.png);              
+        background-repeat: no-repeat;
+        background-image: url(../img/icons_81a50fb1.gif);
+    }
+    .quickdelete {
+        width: 32px;
+        height: 32px;
+        background: url(../img/quickdelete_9c14b01a.png) no-repeat;            /*快速删除*/
+        background-position: 10px 10px;
+        position: absolute;
+        display: block;
+    }
+
+    #ftCon {
+        height: 100px;
+        position: absolute !important;
+        _position:relative;
+        bottom: 44px;
+        text-align: left;
+        width: 100%;
+        _margin-top:250px;
+        z-index: 0;
+        overflow: hidden;
+    }
+    .ftCon-Wrapper {
+        overflow: hidden;
+        width: 640px;
+        margin: 0 auto;
+    }
+    #ftConw {
+        float: right;
+        position: relative;
+    }
+    #lh {
+        margin: 16px 0px 5px;
+    }
+
+    #lh a {
+        color: #272727;
+        margin-right: 20px;
+    }
+    #cp a {
+        color: #666;
+        margin-left: -7px;
+    }
+    #cp .c-icon-icrlogo {
+        width: 14px;
+        height: 17px;
+        display: inline-block;
+        overflow: hidden;
+        background: url(../img/icons_8b5b2ea9.png) no-repeat;            
+        background-position: -600px -96px;
+        position: relative;
+        top: 3px;
+    }
+    #cp{
+        color: #666;
+    }
+    #qrcode {
+        float: left;
+        margin-top: 4px;
+        margin-top: 2px\9;
+    }
+    #qrcode .qrcode-item {
+        float: left;
+    }
+    #qrcode .qrcode-text {
+        float: left;
+        color: #999;
+        line-height: 23px;
+        margin: 8px 0 0 11px;
+        margin: 4px 0 0 6px\9;
+    }
+    #qrcode .qrcode-text b {
+        color: #4c4c4c;
+        font-weight: bold;
+    }
+    #qrcode .qrcode-text span {
+        letter-spacing: 1px;
+    }
+    #qrcode .qrcode-item-1 .qrcode-img {
+        background: url(../img/zbios_62c636fe.png) 0 0 no-repeat;      /*手机百度二维码*/              
+    }                                                               
+    #qrcode .qrcode-img {
+        float: left;
+        width: 60px;
+        height: 60px;
+    }
+    #qrcode .qrcode-item-2 .qrcode-img {
+        margin-left:30px;
+        background: url(../img/nuomi_510f7472.png) 0 0 no-repeat;      /*百度糯米二维码*/    
+    }

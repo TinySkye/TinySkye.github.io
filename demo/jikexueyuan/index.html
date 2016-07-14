@@ -1,0 +1,2273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院</title>
+    <!-- 引入 css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Slider CSS-->
+    <link href="css/flickerplate.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- 头部内容 -->
+<section class="header">
+    <div class="container header-inner">
+        <div class="row">
+            <!--LOGO-->
+            <div class="col-xs-3">
+                <h2><img src="img/header/logo.png" width="113"></h2>
+            </div>
+            <!-- 搜索框 -->
+            <div class="col-xs-6 search-box">
+                <form action="#" method="post">
+                    <input type="text" value="" placeholder="搜索课程、问答或Wiki" id="kw">
+                    <input type="submit" value="" id="submit">
+                </form>
+                <div class="trending-search">
+                    <a href="#">Android</a>
+                    <a href="#">iOS</a>
+                    <a href="#">HTML5</a>
+                </div>
+            </div>
+            <!--个人中心-->
+            <div class="3 personal-info">
+                <a href="#">我的课程 </a>|
+                <a href="#" class="user-name">NimitzDEV</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 菜单 -->
+<section class="menu">
+    <div class="container">
+        <div class="row menu-inner">
+            <div class="xs-col-12">
+                <header>
+                    <!-- 头部菜单-->
+                    <ul class="nav-header">
+                        <li><a href="#">首页</a></li>
+                        <li data-related="1"><a href="#">职业课程</a></li>
+                        <li data-related="2"><a href="#">就业学习</a></li>
+                        <li data-related="3"><a href="#">极客社区</a></li>
+                        <li data-related="4"><a href="#">极客+</a></li>
+                    </ul>
+                </header>
+                <div class="nav-right">
+                    <a href="#">VIP会员</a>
+                    <a href="#">求课程</a>
+                    <a href="#">APP下载</a>
+                </div>
+            </div>
+            <!--菜单内容-->
+            <div class="col-xs-12 menu-contents">
+                <div class="inner-list"></div>
+                <div class="inner-list menu-1">
+                    <a href="#">课程库</a>
+                    <a href="#">知识体系图</a>
+                    <a href="#">职业路径图</a>
+                    <a href="#">系列课程</a>
+                </div>
+                <div class="inner-list menu-2">
+                    <a href="#">Web前端开发</a>
+                    <a href="#">Android开发</a>
+                    <a href="#">Javaweb开发</a>
+                    <a href="#">iOS开发</a>
+                </div>
+                <div class="inner-list menu-3">
+                    <a href="#">Wiki</a>
+                    <a href="#">技术问答</a>
+                    <a href="#">社群</a>
+                    <a href="#">资源共享</a>
+                </div>
+                <div class="inner-list menu-4">
+                    <a href="#">高校合作</a>
+                    <a href="#">极客人才联盟</a>
+                    <a href="#">布道师招募</a>
+                    <a href="#">实战教练招募</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--头部 课程选择-->
+<section class="promo">
+    <div class="container no-padding">
+        <div class="row">
+            <!--所有课程-->
+            <div class="col-xs-3 all-courses">
+                <ul class="courses-list">
+                    <li data-related="1"><a href="#">移动开发</a>
+                        <div class="course-detail detail-menu-1">
+                            <ul class="detail-header">
+                                <li><a href="#">应用开发</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Android</a></li>
+                                        <li><a href="#">iOS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">游戏开发</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Cocos</a></li>
+                                        <li><a href="#">Unity3D</a></li>
+                                        <li><a href="#">SpriteKit2D</a></li>
+                                        <li><a href="#">Unreal</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">常用框架</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Cordova</a></li>
+                                        <li><a href="#">React Native</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="2"><a href="#">前端开发</a>
+                        <div class="course-detail detail-menu-2">
+                            <ul class="detail-header">
+                                <li><a href="#">前端基础</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">HTML</a></li>
+                                        <li><a href="#">CSS</a></li>
+                                        <li><a href="#">JavaScript</a></li>
+                                        <li><a href="#">HTML5</a></li>
+                                        <li><a href="#">CSS3</a></li>
+                                        <li><a href="#">技术前瞻</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">前端进阶</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Typescript</a></li>
+                                        <li><a href="#">前端安全</a></li>
+                                        <li><a href="#">项目实战</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">前端框架</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">jQuery</a></li>
+                                        <li><a href="#">jQuery UI</a></li>
+                                        <li><a href="#">jQuery Mobile</a></li>
+                                        <li><a href="#">AngularJS</a></li>
+                                        <li><a href="#">ReactJS</a></li>
+                                        <li><a href="#">Bootstrap</a></li>
+                                        <li><a href="#">React Native</a></li>
+                                        <li><a href="#">Backbone</a></li>
+                                        <li><a href="#">Three.js</a></li>
+                                        <li><a href="#">MooTools</a></li>
+                                        <li><a href="#">Compass</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">HTML5游戏</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Canvas</a></li>
+                                        <li><a href="#">SVG</a></li>
+                                        <li><a href="#">WebGL</a></li>
+                                        <li><a href="#">Cocos2d-js</a></li>
+                                        <li><a href="#">CreateJS</a></li>
+                                        <li><a href="#">Flash</a></li>
+                                        <li><a href="#">Unreal</a></li>
+                                        <li><a href="#">Egret</a></li>
+                                        <li><a href="#">Phaser</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="3"><a href="#">后端开发</a>
+                        <div class="course-detail detail-menu-3">
+                            <ul class="detail-header">
+                                <li><a href="#">Python</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Python 基础</a></li>
+                                        <li><a href="#">web2py</a></li>
+                                        <li><a href="#">Django</a></li>
+                                        <li><a href="#">Flash</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">PHP</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">PHP 基础</a></li>
+                                        <li><a href="#">YII</a></li>
+                                        <li><a href="#">ThinkPHP</a></li>
+                                        <li><a href="#">Laravel</a></li>
+                                        <li><a href="#">WordPress</a></li>
+                                        <li><a href="#">Phalcon</a></li>
+                                        <li><a href="#">Apache</a></li>
+                                        <li><a href="#">Facebook Hack</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Node.js</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Node.js 基础</a></li>
+                                        <li><a href="#">express</a></li>
+                                        <li><a href="#">Meteor</a></li>
+                                        <li><a href="#">Hexo</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">ASP.NET</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">C#</a></li>
+                                        <li><a href="#">ASP.NET MVC</a></li>
+                                        <li><a href="#">Entity Framework</a></li>
+                                        <li><a href="#">WPF</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">J2EE</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">JSP</a></li>
+                                        <li><a href="#">Maven</a></li>
+                                        <li><a href="#">Spring</a></li>
+                                        <li><a href="#">SpringMVC</a></li>
+                                        <li><a href="#">Struts2</a></li>
+                                        <li><a href="#">MyBatis</a></li>
+                                        <li><a href="#">Hibernate</a></li>
+                                        <li><a href="#">Lucene</a></li>
+                                        <li><a href="#">常用框架</a></li>
+                                        <li><a href="#">项目实战</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Ruby</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Ruby 基础</a></li>
+                                        <li><a href="#">Ruby on Rails</a></li>
+                                        <li><a href="#">Grape</a></li>
+                                        <li><a href="#">Ruby 进阶</a></li>
+                                        <li><a href="#">RubyMine</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Go</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Go 基础</a></li>
+                                        <li><a href="#">beego</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Erlang</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Erlang 基础</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="4"><a href="#">基础知识</a>
+                        <div class="course-detail detail-menu-4">
+                            <ul class="detail-header">
+                                <li><a href="#">基础语言</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">C</a></li>
+                                        <li><a href="#">C++</a></li>
+                                        <li><a href="#">Objective-C</a></li>
+                                        <li><a href="#">Swift</a></li>
+                                        <li><a href="#">C#</a></li>
+                                        <li><a href="#">Java</a></li>
+                                        <li><a href="#">Perl</a></li>
+                                        <li><a href="#">Shell</a></li>
+                                        <li><a href="#">Qt</a></li>
+                                        <li><a href="#">Scala</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">计算机基础</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">计算机组成原理</a></li>
+                                        <li><a href="#">网络工程</a></li>
+                                        <li><a href="#">Word</a></li>
+                                        <li><a href="#">Excel</a></li>
+                                        <li><a href="#">PowerPonit</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">开发基础</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">算法基础</a></li>
+                                        <li><a href="#">算法结构</a></li>
+                                        <li><a href="#">设计模式</a></li>
+                                        <li><a href="#">软件工程</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">开发工具</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Git/Github</a></li>
+                                        <li><a href="#">SVN</a></li>
+                                        <li><a href="#">VI</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">开放标准</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">OpenCL</a></li>
+                                        <li><a href="#">Open XML</a></li>
+                                        <li><a href="#">OpenGL.GLES</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="5"><a href="#">云计算&大数据</a>
+                        <div class="course-detail detail-menu-5">
+                            <ul class="detail-header">
+                                <li><a href="#">云计算</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">OpenStack</a></li>
+                                        <li><a href="#">Docker</a></li>
+                                        <li><a href="#">CloudStack</a></li>
+                                        <li><a href="#">Windows Azure</a></li>
+                                        <li><a href="#">IaaS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">大数据</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Hadoop</a></li>
+                                        <li><a href="#">Storm</a></li>
+                                        <li><a href="#">Hive</a></li>
+                                        <li><a href="#">Kafka</a></li>
+                                        <li><a href="#">Zookeeper</a></li>
+                                        <li><a href="#">Hbase</a></li>
+                                        <li><a href="#">Spark</a></li>
+                                        <li><a href="#">信息检索</a></li>
+                                        <li><a href="#">数据分析</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">虚拟化</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">VMware</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="6"><a href="#">智能硬件&物联网</a>
+                        <div class="course-detail detail-menu-6">
+                            <ul class="detail-header">
+                                <li><a href="#">硬件架构</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">C51</a></li>
+                                        <li><a href="#">ARM</a></li>
+                                        <li><a href="#">Keil</a></li>
+                                        <li><a href="#">Cortex-M</a></li>
+                                        <li><a href="#">Cortex-A</a></li>
+                                        <li><a href="#">AVR</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">物联网操作系统</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">RTOS</a></li>
+                                        <li><a href="#">Android Wear</a></li>
+                                        <li><a href="#">Apple Watchkit</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">开源硬件平台</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Arduino</a></li>
+                                        <li><a href="#">树莓派</a></li>
+                                        <li><a href="#">mbed</a></li>
+                                        <li><a href="#">GoKit</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">通信链接技术</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">无线WiFi</a></li>
+                                        <li><a href="#">移动通信</a></li>
+                                        <li><a href="#">蓝牙</a></li>
+                                        <li><a href="#">NFC</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">信息感知处理技术</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">传感器</a></li>
+                                        <li><a href="#">数据挖掘</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">人机交互技术</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">语音识别</a></li>
+                                        <li><a href="#">人脸识别</a></li>
+                                        <li><a href="#">手势识别</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="7"><a href="#">数据库</a>
+                        <div class="course-detail detail-menu-7">
+                            <ul class="detail-header">
+                                <li><a href="#">SQL</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">MySQL</a></li>
+                                        <li><a href="#">SQL Server</a></li>
+                                        <li><a href="#">Oracle</a></li>
+                                        <li><a href="#">SQLite</a></li>
+                                        <li><a href="#">PostgreSQL</a></li>
+                                        <li><a href="#">DB2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">NoSQL</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Cassandra</a></li>
+                                        <li><a href="#">Redis</a></li>
+                                        <li><a href="#">MongoDB</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="8"><a href="#">认证考试</a>
+                        <div class="course-detail detail-menu-8">
+                            <ul class="detail-header">
+                                <li><a href="#">计算机等级考试</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">一级</a></li>
+                                        <li><a href="#">二级C</a></li>
+                                        <li><a href="#">二级C++</a></li>
+                                        <li><a href="#">网络工程师</a></li>
+                                        <li><a href="#">数据库工程师</a></li>
+                                        <li><a href="#">信息安全工程师</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">企业认证</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">思科认证</a></li>
+                                        <li><a href="#">Oracle认证</a></li>
+                                        <li><a href="#">Linux认证</a></li>
+                                        <li><a href="#">ARM认证</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="9"><a href="#">企业IT</a>
+                        <div class="course-detail detail-menu-9">
+                            <ul class="detail-header">
+                                <li><a href="#">运维管理</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Shell</a></li>
+                                        <li><a href="#">自动化运维</a></li>
+                                        <li><a href="#">Nginx</a></li>
+                                        <li><a href="#">Apache</a></li>
+                                        <li><a href="#">运维监控</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">操作系统</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Linux</a></li>
+                                        <li><a href="#">Windows</a></li>
+                                        <li><a href="#">Mac OS</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">企业服务</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">B2C</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-related="10"><a href="#">设计&产品&测试</a>
+                        <div class="course-detail detail-menu-10">
+                            <ul class="detail-header">
+                                <li><a href="#">设计基础</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">Photoshop</a></li>
+                                        <li><a href="#">Flash</a></li>
+                                        <li><a href="#">Illustrator</a></li>
+                                        <li><a href="#">Sketch</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">游戏设计</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">界面设计</a></li>
+                                        <li><a href="#">角色设计</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">产品经理</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">需求分析</a></li>
+                                        <li><a href="#">Axure</a></li>
+                                        <li><a href="#">项目实战</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">视觉设计</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">应用UI设计</a></li>
+                                        <li><a href="#">网页UI设计</a></li>
+                                        <li><a href="#">设计理论</a></li>
+                                        <li><a href="#">图形设计</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">测试工具</a>
+                                    <ul class="sub-courses">
+                                        <li><a href="#">自动化测试</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--图片轮播-->
+            <div class="col-xs-6">
+                <div class="picture-slider">
+                    <ul>
+                        <li data-background="img/header/slider1.jpg"></li>
+                        <li data-background="img/header/slider2.png"></li>
+                        <li data-background="img/header/slider3.jpg"></li>
+                        <li data-background="img/header/slider4.jpg"></li>
+                        <li data-background="img/header/slider5.jpg"></li>
+                    </ul>
+                </div>
+                <div id="s1" class="scroll-box">
+                    <ul>
+                        <li><a href="#">
+                            <img src="img/header/icon-promo.jpg">
+                            <span>极客学院就业班<br/>0基础|4个月|100%保就业</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/header/icon-html5.png">
+                            <span>HTML5/WEB前端就业班<br/>BAT大牛亲自授课</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/header/icon-android.png">
+                            <span>Android 开发工程师<br/>挑战月薪2万的工作机会</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img src="img/header/icon-javaweb.jpg">
+                            <span>Javaweb开发工程师<br/>Java人才4个月极速进阶</span>
+                        </a></li>
+                    </ul>
+                    <div class="sb-wrapper">
+                        <span id="l1" class="arrow-left"></span>
+                        <span id="r1" class="arrow-right"></span>
+                    </div>
+                </div>
+            </div>
+            <!--个人信息-->
+            <div class="col-xs-3 my-info">
+                <div class="news">
+                    <span class="title">快讯</span><br/>
+                    <a href="#" class="hot">极客周刊 立即订阅</a><br/>
+                    <a href="#">PHP大神成长手册 不学后悔</a><br/>
+                    <a href="#">一个理由申请Android技术书!</a><br/>
+                    <a href="#" class="hot">[限时免费]精品好课 每周更新</a>
+                </div>
+                <div class="personal">
+                    <div class="avatar">
+                        <img width="40" src="img/header/default.gif">
+                    </div>
+                    <div class="login">
+                        <span>Hi 你好<br/>欢迎来到极客学院</span>
+                        <div class="buttons">
+                            <button>登陆</button>
+                            <button>注册</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="function-blocks">
+                    <ul>
+                        <li>
+                            <span class="icon question"></span>
+                            <span>问答</span>
+                            <span class="down-arrow"></span>
+                        </li>
+                        <li>
+                            <span class="icon wiki"></span>
+                            <span>wiki</span>
+                            <span class="down-arrow"></span>
+                        </li>
+                        <li>
+                            <span class="icon course-video"></span>
+                            <span>课程</span>
+                            <span class="down-arrow"></span>
+                        </li>
+                        <li>
+                            <span class="icon groups"></span>
+                            <span>社群</span>
+                            <span class="down-arrow"></span>
+                        </li>
+                        <li>
+                            <span class="icon download"></span>
+                            <span>下载</span>
+                        </li>
+                        <li>
+                            <span class="icon knowledge"></span>
+                            <span>知识</span>
+                        </li>
+                        <li>
+                            <span class="icon career"></span>
+                            <span>职业</span>
+                        </li>
+                        <li>
+                            <span class="icon vip"></span>
+                            <span>VIP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--课程选项卡-->
+<section class="courses-tabs">
+    <div class="container no-padding">
+        <!--选项卡-->
+        <div class="tabs">
+            <ul>
+                <li data-related="1">热门推荐</li>
+                <li data-related="2">最新课程</li>
+                <li data-related="3">免费课程</li>
+                <li data-related="4">项目实战</li>
+                <li data-related="5">全球首发</li>
+                <li data-related="6">企业合作</li>
+            </ul>
+        </div>
+        <!--课程卡1-->
+        <div class="content-block block-1">
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c1.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Photoshop--图像调整11</span>
+                        <div class="desc">
+                            <p>
+                                本课程为图像调整部分的第11课，主要讲解匹配颜色、替换颜色以及通道混合器的效果、原理，帮助学员初步了解该部分工具的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时56分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c2.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Python 字符串</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解 Python 字符串知识，包括字符串简介、字符串的基本操作、常用字符串方法、字符串格式化输出和编码，帮助初学者理解字符串的相关操作。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时46分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c3.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Monkey 随即脚本工具编写</span>
+                        <div class="desc">
+                            <p>
+                                本套课程介绍编写 Monkey 随机脚本工具，使用随机脚本来对 Monkey 测试进行一个补充，使用随机脚本来测试一些，无法直接使用 Monkey 指令来测试页面和功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时28分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c4.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">AppleT应用程序开发</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解利用 SpriteKit 开发框架在 tvOS 平台上开发游戏的基础知识，包括 SpriteKit 框架中常用类的介绍，借助 SKS
+                                进行可视化开发，以及创建带有动画效果的滑板人物。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时57分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c5.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">CSS3实现3D立体旋转</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中
+                                filter 属性，在项目中的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时48分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c6.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">大数据平台基础架构</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解当前大数据领域面临的在线和离线处理问题，以及针对在线处理实时性和迭代性的特点讲解使用 flume + kafka + storm / spark + hbase
+                                / redis 的处理架构；针对离线处理批量、大数据量和持久化时间长的特点讲解使用 hdfs做存储，mapreduce 做计算框架的方式。最后简要介绍对海量数据进行 OLAP
+                                和 OLTP 分析的常用大数据处理工具 elasticsearch、drill等
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时75分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c7.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">ZooKeeper 运维</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解 ZooKeeper，4字命令，JMX 和监控平台搭建和使用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时35分钟</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c8.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">通讯录管理系统（下）</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解查询联系人信息模块、修改联系人信息模块、删除联系人信息模块、显示联系人信息模块以及排序模块。目前，各类通讯电子产品都带有通讯录功能，用户可以方便的记录联系人的通讯信息，同时还可以实现对联系人的查找和排序功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>5课时41分钟</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--课程卡2-->
+        <div class="content-block block-2">
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c2.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Python 字符串</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解 Python 字符串知识，包括字符串简介、字符串的基本操作、常用字符串方法、字符串格式化输出和编码，帮助初学者理解字符串的相关操作。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时46分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c3.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Monkey 随即脚本工具编写</span>
+                        <div class="desc">
+                            <p>
+                                本套课程介绍编写 Monkey 随机脚本工具，使用随机脚本来对 Monkey 测试进行一个补充，使用随机脚本来测试一些，无法直接使用 Monkey 指令来测试页面和功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时28分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c1.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Photoshop--图像调整11</span>
+                        <div class="desc">
+                            <p>
+                                本课程为图像调整部分的第11课，主要讲解匹配颜色、替换颜色以及通道混合器的效果、原理，帮助学员初步了解该部分工具的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时56分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c4.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">AppleT应用程序开发</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解利用 SpriteKit 开发框架在 tvOS 平台上开发游戏的基础知识，包括 SpriteKit 框架中常用类的介绍，借助 SKS
+                                进行可视化开发，以及创建带有动画效果的滑板人物。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时57分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c6.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">大数据平台基础架构</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解当前大数据领域面临的在线和离线处理问题，以及针对在线处理实时性和迭代性的特点讲解使用 flume + kafka + storm / spark + hbase
+                                / redis 的处理架构；针对离线处理批量、大数据量和持久化时间长的特点讲解使用 hdfs做存储，mapreduce 做计算框架的方式。最后简要介绍对海量数据进行 OLAP
+                                和 OLTP 分析的常用大数据处理工具 elasticsearch、drill等
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时75分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c7.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">ZooKeeper 运维</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解 ZooKeeper，4字命令，JMX 和监控平台搭建和使用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时35分钟</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c8.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">通讯录管理系统（下）</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解查询联系人信息模块、修改联系人信息模块、删除联系人信息模块、显示联系人信息模块以及排序模块。目前，各类通讯电子产品都带有通讯录功能，用户可以方便的记录联系人的通讯信息，同时还可以实现对联系人的查找和排序功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>5课时41分钟</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c5.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">CSS3实现3D立体旋转</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中
+                                filter 属性，在项目中的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时48分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--课程卡3-->
+        <div class="content-block block-3">
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c4.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">AppleT应用程序开发</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解利用 SpriteKit 开发框架在 tvOS 平台上开发游戏的基础知识，包括 SpriteKit 框架中常用类的介绍，借助 SKS
+                                进行可视化开发，以及创建带有动画效果的滑板人物。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时57分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c1.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Photoshop--图像调整11</span>
+                        <div class="desc">
+                            <p>
+                                本课程为图像调整部分的第11课，主要讲解匹配颜色、替换颜色以及通道混合器的效果、原理，帮助学员初步了解该部分工具的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时56分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c2.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Python 字符串</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解 Python 字符串知识，包括字符串简介、字符串的基本操作、常用字符串方法、字符串格式化输出和编码，帮助初学者理解字符串的相关操作。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时46分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c3.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Monkey 随即脚本工具编写</span>
+                        <div class="desc">
+                            <p>
+                                本套课程介绍编写 Monkey 随机脚本工具，使用随机脚本来对 Monkey 测试进行一个补充，使用随机脚本来测试一些，无法直接使用 Monkey 指令来测试页面和功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时28分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c5.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">CSS3实现3D立体旋转</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中
+                                filter 属性，在项目中的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时48分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c6.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">大数据平台基础架构</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解当前大数据领域面临的在线和离线处理问题，以及针对在线处理实时性和迭代性的特点讲解使用 flume + kafka + storm / spark + hbase
+                                / redis 的处理架构；针对离线处理批量、大数据量和持久化时间长的特点讲解使用 hdfs做存储，mapreduce 做计算框架的方式。最后简要介绍对海量数据进行 OLAP
+                                和 OLTP 分析的常用大数据处理工具 elasticsearch、drill等
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时75分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c7.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">ZooKeeper 运维</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解 ZooKeeper，4字命令，JMX 和监控平台搭建和使用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时35分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c8.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">通讯录管理系统（下）</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解查询联系人信息模块、修改联系人信息模块、删除联系人信息模块、显示联系人信息模块以及排序模块。目前，各类通讯电子产品都带有通讯录功能，用户可以方便的记录联系人的通讯信息，同时还可以实现对联系人的查找和排序功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>5课时41分钟</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--课程卡4-->
+        <div class="content-block block-4">
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c1.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Photoshop--图像调整11</span>
+                        <div class="desc">
+                            <p>
+                                本课程为图像调整部分的第11课，主要讲解匹配颜色、替换颜色以及通道混合器的效果、原理，帮助学员初步了解该部分工具的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时56分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c3.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Monkey 随即脚本工具编写</span>
+                        <div class="desc">
+                            <p>
+                                本套课程介绍编写 Monkey 随机脚本工具，使用随机脚本来对 Monkey 测试进行一个补充，使用随机脚本来测试一些，无法直接使用 Monkey 指令来测试页面和功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时28分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c4.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">AppleT应用程序开发</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解利用 SpriteKit 开发框架在 tvOS 平台上开发游戏的基础知识，包括 SpriteKit 框架中常用类的介绍，借助 SKS
+                                进行可视化开发，以及创建带有动画效果的滑板人物。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时57分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c2.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Python 字符串</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解 Python 字符串知识，包括字符串简介、字符串的基本操作、常用字符串方法、字符串格式化输出和编码，帮助初学者理解字符串的相关操作。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时46分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c5.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">CSS3实现3D立体旋转</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中
+                                filter 属性，在项目中的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时48分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c6.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">大数据平台基础架构</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解当前大数据领域面临的在线和离线处理问题，以及针对在线处理实时性和迭代性的特点讲解使用 flume + kafka + storm / spark + hbase
+                                / redis 的处理架构；针对离线处理批量、大数据量和持久化时间长的特点讲解使用 hdfs做存储，mapreduce 做计算框架的方式。最后简要介绍对海量数据进行 OLAP
+                                和 OLTP 分析的常用大数据处理工具 elasticsearch、drill等
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时75分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c8.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">通讯录管理系统（下）</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解查询联系人信息模块、修改联系人信息模块、删除联系人信息模块、显示联系人信息模块以及排序模块。目前，各类通讯电子产品都带有通讯录功能，用户可以方便的记录联系人的通讯信息，同时还可以实现对联系人的查找和排序功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>5课时41分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c7.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">ZooKeeper 运维</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解 ZooKeeper，4字命令，JMX 和监控平台搭建和使用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时35分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--课程卡5-->
+        <div class="content-block block-5">
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c3.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Monkey 随即脚本工具编写</span>
+                        <div class="desc">
+                            <p>
+                                本套课程介绍编写 Monkey 随机脚本工具，使用随机脚本来对 Monkey 测试进行一个补充，使用随机脚本来测试一些，无法直接使用 Monkey 指令来测试页面和功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时28分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c7.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">ZooKeeper 运维</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解 ZooKeeper，4字命令，JMX 和监控平台搭建和使用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时35分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c8.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">通讯录管理系统（下）</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解查询联系人信息模块、修改联系人信息模块、删除联系人信息模块、显示联系人信息模块以及排序模块。目前，各类通讯电子产品都带有通讯录功能，用户可以方便的记录联系人的通讯信息，同时还可以实现对联系人的查找和排序功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>5课时41分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c4.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">AppleT应用程序开发</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解利用 SpriteKit 开发框架在 tvOS 平台上开发游戏的基础知识，包括 SpriteKit 框架中常用类的介绍，借助 SKS
+                                进行可视化开发，以及创建带有动画效果的滑板人物。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时57分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c5.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">CSS3实现3D立体旋转</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中
+                                filter 属性，在项目中的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时48分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c6.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">大数据平台基础架构</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解当前大数据领域面临的在线和离线处理问题，以及针对在线处理实时性和迭代性的特点讲解使用 flume + kafka + storm / spark + hbase
+                                / redis 的处理架构；针对离线处理批量、大数据量和持久化时间长的特点讲解使用 hdfs做存储，mapreduce 做计算框架的方式。最后简要介绍对海量数据进行 OLAP
+                                和 OLTP 分析的常用大数据处理工具 elasticsearch、drill等
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时75分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c1.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Photoshop--图像调整11</span>
+                        <div class="desc">
+                            <p>
+                                本课程为图像调整部分的第11课，主要讲解匹配颜色、替换颜色以及通道混合器的效果、原理，帮助学员初步了解该部分工具的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时56分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c2.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Python 字符串</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解 Python 字符串知识，包括字符串简介、字符串的基本操作、常用字符串方法、字符串格式化输出和编码，帮助初学者理解字符串的相关操作。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时46分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--课程卡6-->
+        <div class="content-block block-6">
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c1.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Photoshop--图像调整11</span>
+                        <div class="desc">
+                            <p>
+                                本课程为图像调整部分的第11课，主要讲解匹配颜色、替换颜色以及通道混合器的效果、原理，帮助学员初步了解该部分工具的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时56分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c4.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">AppleT应用程序开发</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解利用 SpriteKit 开发框架在 tvOS 平台上开发游戏的基础知识，包括 SpriteKit 框架中常用类的介绍，借助 SKS
+                                进行可视化开发，以及创建带有动画效果的滑板人物。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时57分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c2.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Python 字符串</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解 Python 字符串知识，包括字符串简介、字符串的基本操作、常用字符串方法、字符串格式化输出和编码，帮助初学者理解字符串的相关操作。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时46分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c3.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">Monkey 随即脚本工具编写</span>
+                        <div class="desc">
+                            <p>
+                                本套课程介绍编写 Monkey 随机脚本工具，使用随机脚本来对 Monkey 测试进行一个补充，使用随机脚本来测试一些，无法直接使用 Monkey 指令来测试页面和功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时28分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-courses">
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c7.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">ZooKeeper 运维</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解 ZooKeeper，4字命令，JMX 和监控平台搭建和使用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时35分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c8.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">通讯录管理系统（下）</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解查询联系人信息模块、修改联系人信息模块、删除联系人信息模块、显示联系人信息模块以及排序模块。目前，各类通讯电子产品都带有通讯录功能，用户可以方便的记录联系人的通讯信息，同时还可以实现对联系人的查找和排序功能。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>5课时41分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c5.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">CSS3实现3D立体旋转</span>
+                        <div class="desc">
+                            <p>
+                                本课程讲解，使用 CSS3，完成 3D 立方体旋转和图形挤压变形动画特效，能够熟练运用 CSS3中，有关 3D 空间的相关属性，实现立体动画效果，并能理解和掌握 CSS3 中
+                                filter 属性，在项目中的运用。
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>4课时48分钟</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-image">
+                        <img src="img/courses/c6.jpg">
+                        <div class="hover-play">
+                            <i class="player-icon"></i>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="title">大数据平台基础架构</span>
+                        <div class="desc">
+                            <p>
+                                本课程主要讲解当前大数据领域面临的在线和离线处理问题，以及针对在线处理实时性和迭代性的特点讲解使用 flume + kafka + storm / spark + hbase
+                                / redis 的处理架构；针对离线处理批量、大数据量和持久化时间长的特点讲解使用 hdfs做存储，mapreduce 做计算框架的方式。最后简要介绍对海量数据进行 OLAP
+                                和 OLTP 分析的常用大数据处理工具 elasticsearch、drill等
+                            </p>
+                        </div>
+                        <div class="footer">
+                            <span>3课时75分钟</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--职业路径图-->
+<section class="job-path">
+    <div class="container no-padding">
+        <!--标题行-->
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="sec-title">职业路径图</a>
+            </div>
+        </div>
+        <!--框图-->
+        <div class="row path">
+            <div class="path-box">
+                <img src="img/path/front-end.png" width="100%">
+                <h2>Web大前端工程师</h2>
+                <p>月薪15k-20k</p>
+                <p>Web开发的未来趋势</p>
+                <button class="path-button">立即学习</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/android.png" width="100%">
+                <h2>Android工程师</h2>
+                <p>月薪5k-30k</p>
+                <p>最火爆的职业 人才缺口大</p>
+                <button class="path-button">立即学习</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/ios.png" width="100%">
+                <h2>iOS开发工程师</h2>
+                <p>月薪6k-30k</p>
+                <P>企业必争的人才资源</P>
+                <button class="path-button">立即学习</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/javaweb.png" width="100%">
+                <h2>JavaWeb工程师</h2>
+                <p>月薪6k-35k</p>
+                <p>就业面最广的职业方向</p>
+                <button class="path-button">立即学习</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/php.png" width="100%">
+                <h2>PHP工程师</h2>
+                <p>月薪5k-35k</p>
+                <p>最好的语言 没有之一</p>
+                <button class="path-button">立即学习</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/cocos2d.png" width="100%">
+                <h2>Cocos2d工程师</h2>
+                <p>月薪7k-30k</p>
+                <p>最流行跨平台游戏开发</p>
+                <button class="path-button">立即学习</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/unity3d.png" width="100%">
+                <h2>Unity3D工程师</h2>
+                <p>月薪7-40k</p>
+                <p>国际最热门的游戏3D引擎</p>
+                <button class="path-button">立即学习</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/dotnet.png" width="100%">
+                <h2>ASP.NET工程师</h2>
+                <p>月薪5k-30k</p>
+                <p>微软强力推行的语言</p>
+                <button class="path-button">立即学习</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/bigdata.png" width="100%">
+                <h2>大数据工程师</h2>
+                <p>月薪8k-40k</p>
+                <p>目前最稀缺的职业方向</p>
+                <button class="path-button path-button-disabled">敬请期待</button>
+            </div>
+            <div class="path-box">
+                <img src="img/path/mt.png" width="100%">
+                <h2>运维工程师</h2>
+                <p>月薪6k-30k</p>
+                <p>最能折腾的职业岗位</p>
+                <button class="path-button path-button-disabled">敬请期待</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--知识体系图-->
+<section class="skills">
+    <div class="container no-padding">
+        <!--标题行-->
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="sec-title">知识体系图</a>
+            </div>
+        </div>
+        <!--框图-->
+        <div class="row skill">
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/android.png">
+                    <h2>Android</h2>
+                    <span>90门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>804503人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/html5.png">
+                    <h2>HTML5开发</h2>
+                    <span>116门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>123456人已经学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/java.png">
+                    <h2>Java语言</h2>
+                    <span>45门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>23568人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/php.png">
+                    <h2>PHP语言</h2>
+                    <span>23门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>888555人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/javaweb.jpg">
+                    <h2>JavaWeb</h2>
+                    <span>64门语言</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>10235人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/ios.png">
+                    <h2>iOS开发</h2>
+                    <span>51门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>563210人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/aspnet.png">
+                    <h2>ASP.NET</h2>
+                    <span>61门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>5810人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/c.png">
+                    <h2>C语言</h2>
+                    <span>17门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>5884520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/python.png">
+                    <h2>Python</h2>
+                    <span>38门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>55563520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/unity3d.png">
+                    <h2>Unity3D</h2>
+                    <span>45门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>5814520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/swift.png">
+                    <h2>Swift</h2>
+                    <span>11门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>556814520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/csharp.png">
+                    <h2>C#</h2>
+                    <span>30门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>55698人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/bootstrap.png">
+                    <h2>Bootstrap</h2>
+                    <span>11门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>123356人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/Cocos2d-x.png">
+                    <h2>Cocos2d-x游戏开发</h2>
+                    <span>89门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>1214520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/l1.jpg">
+                    <h2>计算机一级</h2>
+                    <span>7门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>325780人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/l2.jpg">
+                    <h2>计算机二级</h2>
+                    <span>25门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>563389人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/gui.png">
+                    <h2>GUI</h2>
+                    <span>40门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>5814520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/watchkit.png">
+                    <h2>WatchKit开发</h2>
+                    <span>5门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>6639520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/docker.png">
+                    <h2>Docker</h2>
+                    <span>9门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>3259520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/egret.png">
+                    <h2>Egret</h2>
+                    <span>7门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>36590人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/arduino.png">
+                    <h2>Arduino</h2>
+                    <span>14门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>654520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-front">
+                    <img src="img/skills/uiautomator.png">
+                    <h2>Android UIAutomator</h2>
+                    <span>20门课程</span>
+                </div>
+                <div class="skill-card-back">
+                    <strong>5814520人已学习</strong>
+                    <button class="btn-green">立即学习</button>
+                </div>
+            </div>
+            <div class="skill-card"></div>
+            <div class="skill-card"></div>
+        </div>
+    </div>
+</section>
+<!--精品系列课程-->
+<section class="series">
+    <div class="container no-padding">
+        <!--标题行-->
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="sec-title">知识体系图</a>
+            </div>
+        </div>
+        <!--课程框-->
+        <div class="row series-course">
+            <div class="series-box">
+                <h2>Java 设计模式</h2>
+                <div class="series-image">
+                    <img src="img/series/s1.jpg">
+                </div>
+                <div class="detail">
+                    <span class="count">24门 699919人学习</span>
+                    <a class="btn btn-success btn-sm btn-collect">收藏</a>
+                </div>
+                <div class="hover-detail">
+                    <img src="img/series/t1.jpg">
+                    <span>hexter</span>
+                    <span>按照一个模式一个课程的方式讲解23种设计模式。
+每个模式讲3-4节课，从模拟项目设计引入设计模式设计方案，并有详细示例代码和效果演示。</span>
+                    <a href="#" class="btn btn-success btn-learn-now">马上学习</a>
+                </div>
+            </div>
+            <div class="series-box">
+                <h2>Axure</h2>
+                <div class="series-image">
+                    <img src="img/series/s2.jpg">
+                </div>
+                <div class="detail">
+                    <span class="count">19门 64856人学习</span>
+                    <a class="btn btn-success btn-sm btn-collect">收藏</a>
+                </div>
+                <div class="hover-detail">
+                    <img src="img/series/t2.jpeg">
+                    <span>j_kevin</span>
+                    <span>Axure作为一款专业的原型设计工具，它可以让设计师们利用需求，设计功能和界面来快速的创建应用软件的线框图、流程图、原型和规格说明文档.</span>
+                    <a href="#" class="btn btn-success btn-learn-now">马上学习</a>
+                </div>
+            </div>
+            <div class="series-box">
+                <h2>Python 初级教程</h2>
+                <div class="series-image">
+                    <img src="img/series/s3.jpg">
+                </div>
+                <div class="detail">
+                    <span class="count">16门 116226人学习</span>
+                    <a class="btn btn-success btn-sm btn-collect">收藏</a>
+                </div>
+                <div class="hover-detail">
+                    <img src="img/series/t3.jpg">
+                    <span>韦苏恩</span>
+                    <span>本套课程主要会让新手接触 Python，让各位同学从零基础开始掌握 Python语言。掌握Python基础知识，Python语法，Python运算符与表达式，三种控制流、Python函数、Python数据结构和算法等知识。</span>
+                    <a href="#" class="btn btn-success btn-learn-now">马上学习</a>
+                </div>
+            </div>
+            <div class="series-box">
+                <h2>Ruby语言</h2>
+                <div class="series-image">
+                    <img src="img/series/s4.jpg">
+                </div>
+                <div class="detail">
+                    <span class="count">16门 116226人学习</span>
+                    <a class="btn btn-success btn-sm btn-collect">收藏</a>
+                </div>
+                <div class="hover-detail">
+                    <img src="img/series/t4.gif">
+                    <span>nxbtch</span>
+                    <span>Ruby，一种为简单快捷的面向对象编程（面向对象程序设计）而创的脚本语言</span>
+                    <a href="#" class="btn btn-success btn-learn-now">马上学习</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Wiki-->
+<section class="wiki">
+    <div class="container no-padding">
+        <!--标题行-->
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="sec-title">Wiki</a>
+            </div>
+        </div>
+        <!--框图-->
+        <div class="row wiki-book">
+            <div class="wiki-block">
+                <h2>推荐</h2>
+                <div class="book-set">
+                    <div class="book-set-sub">
+                        <div class="img-box">
+                            <img src="img/wiki/ios8.jpg">
+                        </div>
+                        <div class="img-box">
+                            <img src="img/wiki/struts2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <ul class="book-nav">
+                    <li><a href="#">PHP新手指南</a></li>
+                    <li><a href="#">ASP.NET编程指南</a></li>
+                    <li><a href="#">RESTful Web 服务教程</a></li>
+                </ul>
+            </div>
+            <div class="wiki-block">
+                <h2>最新</h2>
+                <div class="book-set">
+                    <div class="book-set-sub">
+                        <div class="img-box">
+                            <img src="img/wiki/tensorflow.jpg">
+                        </div>
+                        <div class="img-box">
+                            <img src="img/wiki/android.jpg">
+                        </div>
+                    </div>
+                </div>
+                <ul class="book-nav">
+                    <li><a href="#">PHP新手指南</a></li>
+                    <li><a href="#">ASP.NET编程指南</a></li>
+                    <li><a href="#">RESTful Web 服务教程</a></li>
+                </ul>
+            </div>
+            <div class="wiki-block">
+                <h2>热门</h2>
+                <div class="book-set">
+                    <div class="book-set-sub">
+                        <div class="img-box">
+                            <img src="img/wiki/material.jpg">
+                        </div>
+                        <div class="img-box">
+                            <img src="img/wiki/swift.jpg">
+                        </div>
+                    </div>
+                </div>
+                <ul class="book-nav">
+                    <li><a href="#">PHP新手指南</a></li>
+                    <li><a href="#">ASP.NET编程指南</a></li>
+                    <li><a href="#">RESTful Web 服务教程</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--战略合作企业-->
+<section class="companies">
+    <div class="container no-padding">
+        <!--标题行-->
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="sec-title">战略合作企业</a>
+            </div>
+        </div>
+        <!--企业列表-->
+        <div id="s2" class="scroll-box">
+            <ul class="company-brand">
+                <li><a href="#"><img src="img/companies/1.jpg"></a></li>
+                <li><a href="#"><img src="img/companies/2.png"></a></li>
+                <li><a href="#"><img src="img/companies/3.jpg"></a></li>
+                <li><a href="#"><img src="img/companies/4.png"></a></li>
+                <li><a href="#"><img src="img/companies/5.jpg"></a></li>
+                <li><a href="#"><img src="img/companies/6.png"></a></li>
+                <li><a href="#"><img src="img/companies/7.jpg"></a></li>
+                <li><a href="#"><img src="img/companies/8.png"></a></li>
+                <li><a href="#"><img src="img/companies/9.jpg"></a></li>
+                <li><a href="#"><img src="img/companies/10.png"></a></li>
+                <li><a href="#"><img src="img/companies/11.jpg"></a></li>
+                <li><a href="#"><img src="img/companies/12.png"></a></li>
+                <li><a href="#"><img src="img/companies/13.jpg"></a></li>
+                <li><a href="#"><img src="img/companies/14.jpg"></a></li>
+            </ul>
+            <div class="sb-wrapper">
+                <span id="l2" class="arrow-left"></span>
+                <span id="r2" class="arrow-right"></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--合作院校-->
+<section class="companies">
+    <div class="container no-padding">
+        <!--标题行-->
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="sec-title">合作院校</a>
+            </div>
+        </div>
+        <!--院校列表-->
+        <div id="s3" class="scroll-box box-2">
+            <ul class="company-brand brand-2">
+                <li><a href="#"><img src="img/school/1.png"></a></li>
+                <li><a href="#"><img src="img/school/2.png"></a></li>
+                <li><a href="#"><img src="img/school/3.png"></a></li>
+                <li><a href="#"><img src="img/school/4.png"></a></li>
+                <li><a href="#"><img src="img/school/5.png"></a></li>
+                <li><a href="#"><img src="img/school/6.png"></a></li>
+                <li><a href="#"><img src="img/school/7.png"></a></li>
+                <li><a href="#"><img src="img/school/8.png"></a></li>
+                <li><a href="#"><img src="img/school/9.png"></a></li>
+                <li><a href="#"><img src="img/school/10.png"></a></li>
+                <li><a href="#"><img src="img/school/11.png"></a></li>
+            </ul>
+            <div class="sb-wrapper">
+                <span id="l3" class="arrow-left"></span>
+                <span id="r3" class="arrow-right"></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--媒体报道-->
+<section class="companies">
+    <div class="container no-padding">
+        <!--标题行-->
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="sec-title">媒体报道</a>
+            </div>
+        </div>
+        <!--院校列表-->
+        <div id="s4" class="scroll-box">
+            <ul class="company-brand">
+                <li><a href="#"><img src="img/press/mt_1_42b5088.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_2_28e84dd.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_3_46bc154.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_4_2376f75.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_5_8427d73.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_6_21a38b7.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_7_7b98ea4.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_8_22fde55.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_9_c0db122.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_10_d2a046a.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_11_82c3d18.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_12_47fcda1.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_13_fefd1ec.jpg"></a></li>
+                <li><a href="#"><img src="img/press/mt_14_d3100a3.jpg"></a></li>
+            </ul>
+            <div class="sb-wrapper">
+                <span id="l4" class="arrow-left"></span>
+                <span id="r4" class="arrow-right"></span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--底部-->
+<section class="footer">
+    <div class="container no-padding">
+        <div class=" jkinfor-block">
+            <div class="jkinfor cf">
+                <dl>
+                    <dt><a href="#">极客学院</a></dt>
+                    <dd>·<a href="#">职业课程库</a></dd>
+                    <dd>·<a href="#">知识体系图</a></dd>
+                    <dd>·<a href="#">职业路径图</a></dd>
+                    <dd>·<a href="#">企业课程</a></dd>
+                    <dd>·<a href="#">资源下载</a></dd>
+                    <dd>·<a href="#">课程标签</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">网站服务</a></dt>
+                    <dd>·<a href="#">课程需求</a></dd>
+                    <dd>·<a href="#">免费体验VIP</a></dd>
+                    <dd>·<a href="#">黑板报</a></dd>
+                    <dd>·<a href="#">网站地图</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">帮助中心</a></dt>
+                    <dd>·<a href="#">技术问答</a></dd>
+                    <dd>·<a href="#">VIP权益</a></dd>
+                    <dd>·<a href="#">常见问题</a></dd>
+                    <dd>·<a href="#">服务条款</a></dd>
+                    <dd>·<a href="#">版权声明</a></dd>
+                    <dd>·<a href="#">免责声明</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">交流合作</a></dt>
+                    <dd>·<a href="#">关于我们</a></dd>
+                    <dd>·<a href="#">联系我们</a></dd>
+                    <dd>·<a href="#">社会招聘</a></dd>
+                    <dd>·<a href="#">布道师招募</a></dd>
+                    <dd>·<a href="#">合作咨询</a></dd>
+                    <dd>·<a href="#">友情链接</a></dd>
+                    <dd>·<a href="#">实战教练招募</a></dd>
+                </dl>
+                <div class="search-share">
+                    <strong class="jktxt">极客学院，编程是一种信仰！</strong>
+                    <div class="app-download">
+                        <a href="#">
+                            <img src="img/footer/phone.png" width="21">
+                            <div>
+                                <strong>手机客户端</strong>
+                                <p>离线缓存 随时学习</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="share">
+                        <a href="#" class="sina-icon"></a>
+                        <a href="#" title="极客学院官方百度贴吧"
+                           class="tieba-icon"></a>
+                        <a href="#" class="qq-icon">
+                            <img src="img/footer/weixin.png" class="weinxinpop">
+                        </a>
+                    </div>
+                    <div class="kefu-online">
+                        <a href="#">
+                            <div class="kefu-icon online"></div>
+                            <h5>联系我们</h5>
+                            <p>工作日9:00-21:00在线</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<!--加载模块-->
+<script type="text/javascript" src="js/require.js" data-main="js/main.js"></script>
+</html>

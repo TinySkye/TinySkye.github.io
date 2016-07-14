@@ -1,0 +1,542 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+div {
+    display: block;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    -webkit-text-size-adjust: none;
+    background: #eeeff0;
+    min-width: 375px;
+    min-height: 627px;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+a {
+    text-decoration: none !important;
+}
+#compage{
+	display: none !important;
+}
+#page {
+    background: #eeeff0;
+}
+#page, #index-card {
+    height: inherit;
+}
+#index-card {
+    position: relative;
+}
+#weather {
+    position: relative;
+    height: 0;
+}
+#weather {
+    -webkit-transition: height .3s linear;
+    text-align: left;
+}
+.weather-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 6px;
+    height: 40px;
+    line-height: 40px;
+}
+#index-card [class^="icon-"], #index-card [class*=" icon-"], #index-view [class^="icon-"], #index-view [class*=" icon-"] {
+    font-family: icons;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+}
+.weather-outline > *, .weather-detail-sky > * {
+    display: inline-block;
+}
+.icon-weather-default {
+    color: #b7babe;
+    font-size: 28px;
+    position: relative;
+    top: 3px;
+    width: auto;
+    line-height: 35px;
+    margin-left: -1px;
+}
+.weather-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 0 6px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.weather-outline > div.weather-num {
+    font-size: 20px;
+    color: #8c8c8c;
+    padding-left: 2px;
+}
+.weather-status {
+    position: relative;
+    padding: 0 2px 0 7px;
+    top: 3px;
+}
+.weather-status p {
+    height: 13px;
+    line-height: 13px;
+    font-size: 11px;
+    color: #999;
+}
+#index-card [class^="icon-"], #index-card [class*=" icon-"], #index-view [class^="icon-"], #index-view [class*=" icon-"] {
+    font-family: icons;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+}
+.icon-down {
+    vertical-align: bottom;
+    height: 34px;
+}
+#weather .icon-down:before {
+    content: '\e814';
+    color: #b6b7ba;
+    font: 17px/1 icons;
+}
+#weather .icon-down:before {
+    font-size: 20px;
+}
+#header {
+    padding-bottom: 10px;
+}
+#userinfo-wrap {
+    position: relative;
+    height: 54px;
+}
+#index-card [class^="icon-"], #index-card [class*=" icon-"], #index-view [class^="icon-"], #index-view [class*=" icon-"] {
+    font-family: icons;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: .2px;
+}
+#login {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    padding: 8px;
+    color: #9b9b9b;
+    font-size: 28px;
+    line-height: 20px;
+}
+#logo {
+    height: 55px;
+    padding: 17px 0 15px;
+}
+.noTapColor {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img[Attributes Style] {
+    width: 175px;
+    height: 55px;
+}
+#index-form {
+    margin: 0 10px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #949494;
+    border-bottom-color: #bcbcbc;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+#index-form .con-wrap {
+    display: -webkit-box;
+}
+#index-card .se-input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 7px 42px 7px 6px;
+    height: 42px;
+    line-height: 28px;
+    resize: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#index-card .se-input, #index-card .se-encode {
+    display: block;
+    -webkit-box-flex: 1;
+    margin: 2px 0;
+    padding: 6px 35px 6px 6px;
+    font-size: 18px;
+    line-height: 24px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.adjust-input {
+    position: relative;
+    margin: 0 -74px 0 0;
+    line-height: 29px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+input, button, textarea {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+textarea {
+    font-family: monospace;
+    border-color: rgb(169, 169, 169);
+}
+textarea {
+    -webkit-appearance: textarea;
+    background-color: white;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    flex-direction: column;
+    resize: auto;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid;
+    padding: 2px;
+}
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+#index-card .se-inner {
+    width: 82px;
+    position: relative;
+}
+#index-cross {
+    position: absolute;
+    top: 0;
+    left: -35px;
+    width: 35px;
+    height: 42px;
+    display: none;
+    background: url(//m.baidu.com/static/search/clear.png) no-repeat center;
+    -webkit-background-size: 16px;
+    background-size: 16px;
+    z-index: 2;
+}
+button {
+    outline: none;
+}
+input, button, textarea {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#index-form {
+    margin: 0 10px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #949494;
+    border-bottom-color: #bcbcbc;
+}
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border: 2px outset buttonface;
+}
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+#index-card .se-input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 7px 42px 7px 6px;
+    height: 42px;
+    line-height: 28px;
+    resize: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#index-card .se-input, #index-card .se-encode {
+    display: block;
+    -webkit-box-flex: 1;
+    margin: 2px 0;
+    padding: 6px 35px 6px 6px;
+    font-size: 18px;
+    line-height: 24px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s_ipt {
+       /* border: 1px solid #b6b6b6;
+        border-color: #C5BCBC #b6b6b6 #D1CBCB #C5BCBC;*/
+	    margin:0px;
+	    height: 43px;
+	    background: #fff;
+	    border: 1px solid #fff;
+	    width: 100%;
+		padding-left: 7px;
+		line-height: 25px;
+		font-size: 25px;
+    }
+#index-bn {
+	position: relative;
+	top: -44px;
+	left:50%;
+	margin-left: -88px;
+	width: 88px;
+	height: 43px;
+	background: #38f;
+	color: #fff;
+	white-space: nowrap;
+	line-height: 42px;
+	letter-spacing: -1px;
+	font-size: 16px;
+	border-top: 1px solid #38f;
+	border-bottom: 1px solid #38f;
+	box-sizing: inherit;
+	text-align: center;
+	}
+#navs {
+    margin: 17px 0 14px;
+    overflow: hidden;
+}
+#navs a:first-child, #navs a:nth-child(7) {
+    margin-left: 2%;
+}
+#navs a {
+    float: left;
+    width: 16%;
+    font-size: 12px;
+    color: #666;
+    text-decoration:none;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    text-decoration: underline;
+    cursor: auto;
+}
+#navs a i {
+    display: block;
+    margin-bottom: 4px;
+    height: 24px;
+}
+i, cite, em, var, address, dfn {
+    font-style: italic;
+}
+.navs-icon{
+	margin-bottom: 5px;
+}
+#plus-title {
+    position: relative;
+    margin: 2px 14px 0;
+    height: 40px;
+    text-align: left;
+}
+#plus-card {
+    position: relative;
+    padding: 0 0px 10px;
+    display: block;
+    background: #fff;
+    margin: 0px 8px;
+    height: 119px;
+}
+
+.normal-title {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#index-card .normal-title > i {
+    position: absolute;
+    top: 11px;
+    left: -2px;
+    display: none;
+}
+#plus-title h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+.cards{
+    overflow: hidden;
+    margin-top: -5px;
+    font-size: 14px;
+}
+.cards a{
+	color: #262626;
+}
+#nav-list a {
+    float: left;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+}
+#nav-list a span {
+    display: inline-block;
+    position: relative;
+    padding: 0 6px 0 5px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+#nav-list a span, #nav-view .rec p, #nav-view .s-webname, #nav-view .s-weburl {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#nav-list a {
+    float: left;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+}
+.lqs74 {
+	margin: 34px -33px;
+}
+.lqs74 li {
+	height: 33px;
+	line-height: 33px;
+	text-align: left;
+}
+.lqs74 li:empty {
+	display: none;
+}
+.lqs74 a {
+	position: relative;
+	height: 33px;
+	overflow: hidden;
+	display: block;
+	padding-left: 21px;
+	font-size: 13px;
+	color: #555;
+	background: none no-repeat 0 center;
+	-webkit-background-size: 15px 11px;
+}
+.has-skin .lqs74 a {
+	color: #fff;
+}
+.has-background .lqs74 a {
+	color: #fff;
+}
+.lqs74 .hotIcon a:after {
+	content: '\e626';position: absolute;
+	top: 6px;left: -3px;
+	font: 21px/1 icons;
+	color: #ed5353;
+}
+.lqs74 .baiduIcon a {
+	background-image: url(//m.baidu.com/static/index/icon/w_icon2.png);
+	-webkit-background-size: 15px 15px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+ol, ul {
+    list-style: none;
+}
+
+.lqs74 .hotIcon a:after {
+    content: '\e626';
+    position: absolute;
+    top: 6px;
+    left: -3px;
+    font: 21px/1 icons;
+    color: #ed5353;
+}
+#index-copyright {
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 16px;
+    color: #999;
+}
+#foot div a {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 95px;
+    line-height: 34px;
+    color: #666;
+    font-size: 13px;
+}
+#foot div a .icon-feedback {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAlUlEQ…h6oHRXo6jLOCGoudTaGrQ8GoZHOHplmmFmy5nO29kjEfgFKVQDsNj13egAAAAASUVORK5CYII=) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
