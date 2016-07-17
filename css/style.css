@@ -1031,7 +1031,6 @@ a {
   font-weight: 300;
   color: #574c4c;
   padding-bottom: 5px;
-  border-bottom: 1px solid #ddd;
 }
 .article-entry h3,
 .article-entry h4,
@@ -1041,7 +1040,6 @@ a {
   font-weight: 300;
   color: #574c4c;
   padding-bottom: 5px;
-  border-bottom: 1px solid #ddd;
 }
 .article-entry video {
   max-width: 100%;
@@ -1535,7 +1533,6 @@ a {
 }
 .article-entry .highlight .line {
   font-size: 15px;
-  height: 15px;
 }
 .article-entry .gist {
   margin: 0 -20px;
