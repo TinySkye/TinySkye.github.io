@@ -3,16 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>极客学院IT在线教育平台-中国最大的IT职业在线教育平台</title>
-    <link rel="stylesheet" type="text/css" href="jikexueyuan.css">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/lesson.css">
 </head>
 <body>
   <div class="wrapper">
     <div  id="header">
         <div class="wrap">
      		<a href="#">
-			<h2>
-                <img src="images/logo_c8caff4.png" class="logo" alt="极客学院">
-            </h2>
+    			<h2>
+                    <img src="img/logo_c8caff4.png" class="logo" alt="极客学院">
+                </h2>
 		    </a>
 
 		    <div class="search-section">
@@ -41,7 +44,7 @@
     			<em style="padding: 0px 10px">|</em>
                 <a href="#" postion="index_index_header" rel="nofollow">
                     <span style="position: relative;">注册</span>
-                    <!-- <img src="images/hoticon_0ce3f3d.png" class="img_h"> -->
+                    <!-- <img src="img/hoticon_0ce3f3d.png" class="img_h"> -->
                 </a>
     		</div>
      	</div>
@@ -56,69 +59,63 @@
             <div class="nav w-1000">
                 <div class="navbox" id="boxs">
                     <a href="#">首页</a>
-                    <a href="#" node-type="nav-link">职业课程</a>
-                    <a href="#" node-type="nav-link">就业学习</a>
-                    <a href="#" node-type="nav-link">极客社区</a>
-                    <a href="#" style="position: relative;" node-type="nav-link">极客+</a>
+                    <a href="#" node-type="nav-link" id="box-item1">职业课程</a>
+                    <a href="#" node-type="nav-link" id="box-item2">就业学习</a>
+                    <a href="#" node-type="nav-link" id="box-item3">极客社区</a>
+                    <a href="#" style="position: relative;" node-type="nav-link" id="box-item4">极客+</a>
 
-                    <div id="navs" class="w-1000" >
-                        <ul class="w-1000">
-                            <li>
-                                <div class="divv0"></div>
+                        <ul class="navpanel cf">
+                            <li class="panel-item" id="panel-item1">
+                                <span class="angle" id="angle1"></span>
+                                <ul class="item-box">
+                                    <li><a target="_blank" href="#">课程库</a></li>
+                                    <li><a target="_blank" href="#">知识体系图</a></li>
+                                    <li><a target="_blank" href="#">职业路径图</a></li>
+                                    <li><a target="_blank" href="#">系列课程</a></li>
+                                </ul>
                             </li>
-                            <li class="lil">
-                                <div class="divv">
-                                    <ul class="item-box">
-                                        <li><a target="_blank" href="#">课程库</a></li>
-                                        <li><a target="_blank" href="#">知识体系图</a></li>
-                                        <li><a target="_blank" href="#">职业路径图</a></li>
-                                        <li><a target="_blank" href="#">系列课程</a></li>
-                                    </ul>
-                                </div>
+                            <li class="panel-item" id="panel-item2">
+                                <span class="angle" id="angle2"></span>
+                                <ul class="item-box">
+                                    <li><a target="_blank" href="#" >Web前端开发</a></li>
+                                    <li><a target="_blank" href="#">Android开发</a></li>
+                                    <li><a target="_blank" href="#">PHP开发</a></li>
+                                    <li><a target="_blank" href="#">iOS开发</a></li>
+                                    <li><a target="_blank" href="#">JavaWeb开发</a></li>
+                                </ul>
                             </li>
-                            <li class="lil">
-                                <div class="divv">
-                                    <ul class="item-box">
-                                        <li><a target="_blank" href="#" >Web前端开发</a></li>
-                                        <li><a target="_blank" href="#">Android开发</a></li>
-                                        <li><a target="_blank" href="#">JavaWeb开发</a></li>
-                                    </ul>
-                                </div>
+                            <li class="panel-item" id="panel-item3">
+                                <span class="angle" id="angle3"></span>
+                                <ul class="item-box">
+                                    <li><a target="_blank" href="#">Wiki</a></li>
+                                    <li><a target="_blank" href="#">技术问答</a></li>
+                                    <li><a target="_blank" href="#">社群</a></li>
+                                    <li><a target="_blank" href="#">资源分享</a></li>
+                                </ul>
                             </li>
-                            <li class="lil">
-                                <div class="divv">
-                                    <ul class="item-box">
-                                        <li><a target="_blank" href="#">Wiki</a></li>
-                                        <li><a target="_blank" href="#">技术问答</a></li>
-                                        <li><a target="_blank" href="#">社群</a></li>
-                                        <li><a target="_blank" href="#">资源分享</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="lil">
-                                <div class="divv">
-                                    <ul class="item-box">
-                                        <li><a target="_blank" href="#" >高校合作</a></li>
-                                        <li><a target="_blank" href="#" >极客人才联盟</a></li>
-                                        <li><a target="_blank" href="#" >布道师招募</a></li>
-                                        <li><a target="_blank" href="#" >实战教练招募</a></li>
-                                    </ul>
-                                </div>
+                            <li class="panel-item" id="panel-item4">
+                                <span class="angle" id="angle4"></span>
+                                <ul class="item-box">
+                                    <li><a target="_blank" href="#" >高校合作</a></li>
+                                    <li><a target="_blank" href="#" >极客人才联盟</a></li>
+                                    <li><a target="_blank" href="#" >布道师招募</a></li>
+                                    <li><a target="_blank" href="#" >实战教练招募</a></li>
+                                </ul>
                             </li>
                         </ul>
-                    </div>
                 </div>
+                
                 <div class="user-need">
                     <a href="#">
-                        <span><img src="images/vip-icon_76ae754.png">VIP会员</span>
+                        <span><img src="img/vip-icon_76ae754.png">VIP会员</span>
                     </a>
                     <a href="#" target="_blank">
-                        <span><img src="images/txwj-icon_5ff1259.png">填问卷领福利</span>
+                        <span><img src="img/txwj-icon_5ff1259.png">填问卷领福利</span>
                     </a>
                     <a href="#" target="_blank">
                         <span style="position: relative;">
-                            <img src="images/dl-icon_4bc18a7.png">
-                            <img src="images/newicon_56b11ef.png" style="width: 14px;height: 15px;position: absolute;z-index: 2000;right: -19px;top: -14px;display: block;">APP下载
+                            <img src="img/dl-icon_4bc18a7.png">
+                            <img src="img/newicon_56b11ef.png" style="width: 14px;height: 15px;position: absolute;z-index: 2000;right: -19px;top: -14px;display: block;">APP下载
                         </span>
                     </a>
                 </div>
@@ -127,984 +124,722 @@
     </div>
 
 	<div id="pager">
-	<div class="w-1000 mar-t20 cf">
-    <div class="lesson-classfiy-nav">
-    <ul>
-        <li>
-            <div>
-                <a cgid="1" href="#">移动开发</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        <dl>
-                            <dt><a href="#" cgid="58">应用开发</a></dt>
-                            <dd class="cf">
-                                <a href="#" cgid="59">Android</a>
-                                <a href="#" cgid="60">iOS</a>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><a href="#" cgid="13">游戏开发</a></dt>
-                            <dd class="cf">
-                                <a href="#" cgid="63">Cocos</a>
-                                <a href="#" cgid="64">Unity3D</a>
-                                <a href="#" cgid="65">SpriteKit 2D</a>
-                                <a href="#" cgid="66">Unreal</a>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><a href="#" cgid="14">常用框架</a></dt>
-                            <dd class="cf">
-                                <a href="#" cgid="68">Cordova</a>
-                                <a href="#" cgid="382">React Native</a>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
+	   <div class="w-1000 mar-t20 cf">
+            <div class="lesson-classfiy-nav" id="classfiy-nav">
+                <ul>
+                    <li>
+                        <div>
+                            <a cgid="1" href="#">移动开发</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="58">应用开发</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="59">Android</a>
+                                            <a href="#" cgid="60">iOS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="13">游戏开发</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="63">Cocos</a>
+                                            <a href="#" cgid="64">Unity3D</a>
+                                            <a href="#" cgid="65">SpriteKit 2D</a>
+                                            <a href="#" cgid="66">Unreal</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="14">常用框架</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="68">Cordova</a>
+                                            <a href="#" cgid="382">React Native</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="2" href="#">前端开发</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="16">前端基础</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="76">HTML</a>
+                                            <a href="#" cgid="77">CSS</a>
+                                            <a href="#" cgid="78">JavaScript</a>
+                                            <a href="#" cgid="79">HTML5</a>
+                                            <a href="#" cgid="80">CSS3</a>
+                                            <a href="#" cgid="81">技术前瞻</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="18">前端进阶</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="97">Typescript</a>
+                                            <a href="#" cgid="98">前端安全</a>
+                                            <a href="#" cgid="99">项目实战</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="17">前端框架</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="82">jQuery</a>
+                                            <a href="#" cgid="83">jQuery UI</a>
+                                            <a href="#" cgid="84">jQuery Mobile</a>
+                                            <a href="#" cgid="86">AngularJS</a>
+                                            <a href="#" cgid="87">ReactJS</a>
+                                            <a href="#" cgid="94">Bootstrap</a>
+                                            <a href="#" cgid="371">React Native</a>
+                                            <a href="#" cgid="372">Backbone</a>
+                                            <a href="#" cgid="373">Three.js</a>
+                                            <a href="#" cgid="374">MooTools</a>
+                                            <a href="#" cgid="375">Compass</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="19">HTML5游戏</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="100">Canvas</a>
+                                            <a href="#" cgid="102">SVG</a>
+                                            <a href="#" cgid="103">WebGL</a>
+                                            <a href="#" cgid="105">Cocos2d-js</a>
+                                            <a href="#" cgid="106">CreateJS</a>
+                                            <a href="#" cgid="107">Flash</a>
+                                            <a href="#" cgid="108">Unreal</a>
+                                            <a href="#" cgid="109">Egret</a>
+                                            <a href="#" cgid="376">Phaser</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="3" href="#">后端开发</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="23">Python</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="147">Python 基础</a>
+                                            <a href="#" cgid="148">web2py</a>
+                                            <a href="#" cgid="149">Django</a>
+                                            <a href="#" cgid="150">Flask</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="21">PHP</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="123">PHP 基础</a>
+                                            <a href="#" cgid="125">YII</a>
+                                            <a href="#" cgid="126">ThinkPHP</a>
+                                            <a href="#" cgid="127">Laravel</a>
+                                            <a href="#" cgid="128">WordPress</a>
+                                            <a href="#" cgid="131">Phalcon</a>
+                                            <a href="#" cgid="135">Apache</a>
+                                            <a href="#" cgid="136">Fackbook Hack</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="26">Node.js</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="158">Node.js 基础</a>
+                                            <a href="#" cgid="159">express</a>
+                                            <a href="#" cgid="161">Meteor</a>
+                                            <a href="#" cgid="386">Hexo</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="22">ASP.NET</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="137">C#</a>
+                                            <a href="#" cgid="139">ASP.NET MVC</a>
+                                            <a href="#" cgid="140">Entity Framework</a>
+                                            <a href="#" cgid="368">WPF</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="20">J2EE</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="111">JSP</a>
+                                            <a href="#" cgid="112">Maven</a>
+                                            <a href="#" cgid="114">Spring</a>
+                                            <a href="#" cgid="115">SpringMVC</a>
+                                            <a href="#" cgid="116">Struts2</a>
+                                            <a href="#" cgid="117">MyBatis</a>
+                                            <a href="#" cgid="118">Hibernate</a>
+                                            <a href="#" cgid="120">Lucene</a>
+                                            <a href="#" cgid="369">常用框架</a>
+                                            <a href="#" cgid="370">项目实战</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="24">Ruby</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="151">Ruby 基础</a>
+                                            <a href="#" cgid="152">Ruby on Rails</a>
+                                            <a href="#" cgid="153">Grape</a>
+                                            <a href="#" cgid="366">Ruby进阶</a>
+                                            <a href="#" cgid="367">RubyMine</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="25">Go</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="155">Go 基础</a>
+                                            <a href="#" cgid="157">beego</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="387">Erlang</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="388">Erlang 基础</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="4" href="#">基础知识</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="27">基础语言</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="162">C</a>
+                                            <a href="#" cgid="163">C++</a>
+                                            <a href="#" cgid="165">Objective-C</a>
+                                            <a href="#" cgid="166">Swift</a>
+                                            <a href="#" cgid="167">C#</a>
+                                            <a href="#" cgid="168">Java</a>
+                                            <a href="#" cgid="169">Perl</a>
+                                            <a href="#" cgid="170">Shell</a>
+                                            <a href="#" cgid="171">Qt</a>
+                                            <a href="#" cgid="390">Scala</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="28">计算机基础</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="172">计算机组成原理</a>
+                                            <a href="#" cgid="173">网络工程</a>
+                                            <a href="#" cgid="175">Word</a>
+                                            <a href="#" cgid="176">Excel</a>
+                                            <a href="#" cgid="177">PowerPoint</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="29">开发基础</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="178">算法基础</a>
+                                            <a href="#" cgid="179">数据结构</a>
+                                            <a href="#" cgid="180">设计模式</a>
+                                            <a href="#" cgid="181">软件工程</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="30">开发工具</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="183">Git/Github</a>
+                                            <a href="#" cgid="184">SVN</a>
+                                            <a href="#" cgid="185">VI</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="31">开放标准</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="186">OpenCL</a>
+                                            <a href="#" cgid="187">Open XML</a>
+                                            <a href="#" cgid="188">OpenGL/GLES</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="5" href="#">云计算&amp;大数据</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="32">云计算</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="189">OpenStack</a>
+                                            <a href="#" cgid="191">Docker</a>
+                                            <a href="#" cgid="197">CloudStack</a>
+                                            <a href="#" cgid="378">Windows Azure</a>
+                                            <a href="#" cgid="389">IaaS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="33">大数据</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="198">Hadoop</a>
+                                            <a href="#" cgid="200">Storm</a>
+                                            <a href="#" cgid="204">Hive</a>
+                                            <a href="#" cgid="208">Kafka</a>
+                                            <a href="#" cgid="211">Hbase</a>
+                                            <a href="#" cgid="213">Spark</a>
+                                            <a href="#" cgid="377">信息检索</a>
+                                            <a href="#" cgid="383">数据分析</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="34">虚拟化</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="220">VMware</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="6" href="#">智能硬件&amp;物联网</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="35">硬件架构</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="222">C51</a>
+                                            <a href="#" cgid="223">ARM</a>
+                                            <a href="#" cgid="226">Keil</a>
+                                            <a href="#" cgid="228">Cortex-M</a>
+                                            <a href="#" cgid="229">Cortex-A</a>
+                                            <a href="#" cgid="379">AVR</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="36">物联网操作系统</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="231">RTOS</a>
+                                            <a href="#" cgid="233">Android Wear</a>
+                                            <a href="#" cgid="236">Apple Watchkit</a>
+                                        </dd>
+                                    </dl>
+                                    
+                                    <dl>
+                                        <dt><a href="#" cgid="37">开源硬件平台</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="237">Arduino</a>
+                                            <a href="#" cgid="238">树莓派</a>
+                                            <a href="#" cgid="239">mbed</a>
+                                            <a href="#" cgid="242">GoKit</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="38">通信链接技术</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="243">无线WiFi</a>
+                                            <a href="#" cgid="244">移动通信</a>
+                                            <a href="#" cgid="245">蓝牙</a>
+                                            <a href="#" cgid="247">NFC</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="39">信息感知处理技术</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="251">传感器</a>
+                                            <a href="#" cgid="255">数据挖掘</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="40">人机交互技术</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="257">语音识别</a>
+                                            <a href="#" cgid="259">人脸识别</a>
+                                            <a href="#" cgid="261">手势识别</a>
+                                        </dd>
+                                    </dl>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="7" href="#">数据库</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="41">SQL</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="262">MySQL</a>
+                                            <a href="#" cgid="263">SQL Server</a>
+                                            <a href="#" cgid="264">Oracle</a>
+                                            <a href="#" cgid="265">SQLite</a>
+                                            <a href="#" cgid="266">PostgreSQL</a>
+                                            <a href="#" cgid="267">DB2</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="42">NoSQL</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="212">Cassandra</a>
+                                            <a href="#" cgid="269">Redis</a>
+                                            <a href="#" cgid="271">MongoDB</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="8" href="#">认证考试</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="43">计算机等级考试</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="275">一级</a>
+                                            <a href="#" cgid="276">二级C</a>
+                                            <a href="#" cgid="277">二级Java</a>
+                                            <a href="#" cgid="278">二级C++</a>
+                                            <a href="#" cgid="281">网络工程师</a>
+                                            <a href="#" cgid="282">数据库工程师</a>
+                                            <a href="#" cgid="283">信息安全工程师</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="45">企业认证</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="298">思科认证</a>
+                                            <a href="#" cgid="299">Oracle认证</a>
+                                            <a href="#" cgid="301">Linux认证</a>
+                                            <a href="#" cgid="302">ARM认证</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="9" href="#">企业 IT</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt>
+                                            <a href="#" cgid="46">运维管理</a>
+                                        </dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="303">Shell</a>
+                                            <a href="#" cgid="304">自动化运维</a>
+                                            <a href="#" cgid="305">Nginx</a>
+                                            <a href="#" cgid="308">Apache</a>
+                                            <a href="#" cgid="380">运维监控</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="48">操作系统</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="311">Linux</a>
+                                            <a href="#" cgid="312">Windows</a>
+                                            <a href="#" cgid="313">Mac OS</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="384">企业服务</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="385">B2C</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div>
+                            <a cgid="11" href="#">设计&amp;产品&amp;测试</a>
+                            <div class="lesson-list-show" style="width: 401px;">
+                                <div style="width: 400px;">
+                                    <dl>
+                                        <dt><a href="#" cgid="51">设计基础</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="327">Photoshop</a>
+                                            <a href="#" cgid="329">Flash</a>
+                                            <a href="#" cgid="330">Illustrator</a>
+                                            <a href="#" cgid="331">Sketch</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="52">游戏设计</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="336">界面设计</a>
+                                            <a href="#" cgid="338">角色设计</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="54">产品经理</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="341">需求分析</a>
+                                            <a href="#" cgid="343">Axure</a>
+                                            <a href="#" cgid="344">项目实战</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="362">视觉设计</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="340">应用UI设计</a>
+                                            <a href="#" cgid="363">网页UI设计</a>
+                                            <a href="#" cgid="364">设计理论</a>
+                                            <a href="#" cgid="365">图形设计</a>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#" cgid="50">测试工具</a></dt>
+                                        <dd class="cf">
+                                            <a href="#" cgid="325">自动化测试</a>
+                                        </dd>
+                                    </dl>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
             </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="2" href="#">前端开发</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        <dl>
-                            <dt><a href="#" cgid="16">前端基础</a></dt>
-                            <dd class="cf">
-                                <a href="#" cgid="76">HTML</a>
-                                <a href="#" cgid="77">CSS</a>
-                                <a href="#" cgid="78">JavaScript</a>
-                                <a href="#" cgid="79">HTML5</a>
-                                <a href="#" cgid="80">CSS3</a>
-                                <a href="#" cgid="81">技术前瞻</a>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><a href="#" cgid="18">前端进阶</a></dt>
-                            <dd class="cf">
-                                <a href="#" cgid="97">Typescript</a>
-                                <a href="#" cgid="98">前端安全</a>
-                                <a href="#" cgid="99">项目实战</a>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><a href="#" cgid="17" jktag="0003|1|01101|cname:webframe">前端框架</a></dt>
-                            <dd class="cf">
-                                <a href="#" cgid="82">jQuery</a>
-                                <a href="#" cgid="83">jQuery UI</a>
-                                <a href="#" cgid="84">jQuery Mobile</a>
-                                <a href="#" cgid="86">AngularJS</a>
-                                <a href="#" cgid="87">ReactJS</a>
-                                <a href="#" cgid="94">Bootstrap</a>
-                                <a href="#" cgid="371">React Native</a>
-                                <a href="#" cgid="372">Backbone</a>
-                                <a href="#" cgid="373">Three.js</a>
-                                <a href="#" cgid="374">MooTools</a>
-                                <a href="#" cgid="375">Compass</a>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt><a href="#" cgid="19">HTML5游戏</a></dt>
-                            <dd class="cf">
-                                <a href="#" cgid="100">Canvas</a>
-                                <a href="#" cgid="102">SVG</a>
-                                <a href="#" cgid="103">WebGL</a>
-                                <a href="#" cgid="105">Cocos2d-js</a>
-                                <a href="#" cgid="106">CreateJS</a>
-                                <a href="#" cgid="107">Flash</a>
-                                <a href="#" cgid="108">Unreal</a>
-                                <a href="#" cgid="109">Egret</a>
-                                <a href="#" cgid="376">Phaser</a>
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="3" href="http://www.jikexueyuan.com/course/dev/" jktag="0003|1|01100|cname:dev">后端开发</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/python/" cgid="23" jktag="0003|1|01101|cname:python">Python</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/pythonbase/" cgid="147" jktag="0003|1|01101|cname:pythonbase">Python 基础</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/web2py/" cgid="148" jktag="0003|1|01101|cname:web2py">web2py</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/django/" cgid="149" jktag="0003|1|01101|cname:django">Django</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/flask/" cgid="150" jktag="0003|1|01101|cname:flask">Flask</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/php/" cgid="21" jktag="0003|1|01101|cname:php">PHP</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/phpbase/" cgid="123" jktag="0003|1|01101|cname:phpbase">PHP 基础</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/yii/" cgid="125" jktag="0003|1|01101|cname:yii">YII</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/thinkphp/" cgid="126" jktag="0003|1|01101|cname:thinkphp">ThinkPHP</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/laravel/" cgid="127" jktag="0003|1|01101|cname:laravel">Laravel</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/wordpress/" cgid="128" jktag="0003|1|01101|cname:wordpress">WordPress</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/phalcon/" cgid="131" jktag="0003|1|01101|cname:phalcon">Phalcon</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/apachedev/" cgid="135" jktag="0003|1|01101|cname:apachedev">Apache</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/fackbookhack/" cgid="136" jktag="0003|1|01101|cname:fackbookhack">Fackbook Hack</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/nodedotjs/" cgid="26" jktag="0003|1|01101|cname:nodedotjs">Node.js</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/nodejs/" cgid="158" jktag="0003|1|01101|cname:nodejs">Node.js 基础</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/express/" cgid="159" jktag="0003|1|01101|cname:express">express</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/meteor/" cgid="161" jktag="0003|1|01101|cname:meteor">Meteor</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/hexo/" cgid="386" jktag="0003|1|01101|cname:hexo">Hexo</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/aspdotnet/" cgid="22" jktag="0003|1|01101|cname:aspdotnet">ASP.NET</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/csharpdev/" cgid="137" jktag="0003|1|01101|cname:csharpdev">C#</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/mvc/" cgid="139" jktag="0003|1|01101|cname:mvc">ASP.NET MVC</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/entity/" cgid="140" jktag="0003|1|01101|cname:entity">Entity Framework</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/wpf/" cgid="368" jktag="0003|1|01101|cname:wpf">WPF</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/j2ee/" cgid="20" jktag="0003|1|01101|cname:j2ee">J2EE</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/jsp/" cgid="111" jktag="0003|1|01101|cname:jsp">JSP</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/maven/" cgid="112" jktag="0003|1|01101|cname:maven">Maven</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/spring/" cgid="114" jktag="0003|1|01101|cname:spring">Spring</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/springmvc/" cgid="115" jktag="0003|1|01101|cname:springmvc">SpringMVC</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/struts2/" cgid="116" jktag="0003|1|01101|cname:struts2">Struts2</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/mybatis/" cgid="117" jktag="0003|1|01101|cname:mybatis">MyBatis</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/hibernate/" cgid="118" jktag="0003|1|01101|cname:hibernate">Hibernate</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/lucene/" cgid="120" jktag="0003|1|01101|cname:lucene">Lucene</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/j2eeframe/" cgid="369" jktag="0003|1|01101|cname:j2eeframe">常用框架</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/j2eepractice/" cgid="370" jktag="0003|1|01101|cname:j2eepractice">项目实战</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/ruby/" cgid="24" jktag="0003|1|01101|cname:ruby">Ruby</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/rubybase/" cgid="151" jktag="0003|1|01101|cname:rubybase">Ruby 基础</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/rails/" cgid="152" jktag="0003|1|01101|cname:rails">Ruby on Rails</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/grape/" cgid="153" jktag="0003|1|01101|cname:grape">Grape</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/rubyadvanced/" cgid="366" jktag="0003|1|01101|cname:rubyadvanced">Ruby进阶</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/rubymine/" cgid="367" jktag="0003|1|01101|cname:rubymine">RubyMine</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/go/" cgid="25" jktag="0003|1|01101|cname:go">Go</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/gobase/" cgid="155" jktag="0003|1|01101|cname:gobase">Go 基础</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/beego/" cgid="157" jktag="0003|1|01101|cname:beego">beego</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/erlang/" cgid="387" jktag="0003|1|01101|cname:erlang">Erlang</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/erlangbase/" cgid="388" jktag="0003|1|01101|cname:erlangbase">Erlang 基础</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="4" href="http://www.jikexueyuan.com/course/base/" jktag="0003|1|01100|cname:base">基础知识</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/baselang/" cgid="27" jktag="0003|1|01101|cname:baselang">基础语言</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/c/" cgid="162" jktag="0003|1|01101|cname:c">C</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/cpp/" cgid="163" jktag="0003|1|01101|cname:cpp">C++</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/oc/" cgid="165" jktag="0003|1|01101|cname:oc">Objective-C</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/swift/" cgid="166" jktag="0003|1|01101|cname:swift">Swift</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/csharp/" cgid="167" jktag="0003|1|01101|cname:csharp">C#</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/java/" cgid="168" jktag="0003|1|01101|cname:java">Java</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/perl/" cgid="169" jktag="0003|1|01101|cname:perl">Perl</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/shell/" cgid="170" jktag="0003|1|01101|cname:shell">Shell</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/qt/" cgid="171" jktag="0003|1|01101|cname:qt">Qt</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/scala/" cgid="390" jktag="0003|1|01101|cname:scala">Scala</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/computer/" cgid="28" jktag="0003|1|01101|cname:computer">计算机基础</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/theory/" cgid="172" jktag="0003|1|01101|cname:theory">计算机组成原理</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/network/" cgid="173" jktag="0003|1|01101|cname:network">网络工程</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/word/" cgid="175" jktag="0003|1|01101|cname:word">Word</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/excel/" cgid="176" jktag="0003|1|01101|cname:excel">Excel</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/ppt/" cgid="177" jktag="0003|1|01101|cname:ppt">PowerPoint</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/devbase/" cgid="29" jktag="0003|1|01101|cname:devbase">开发基础</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/count/" cgid="178" jktag="0003|1|01101|cname:count">算法基础</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/figure/" cgid="179" jktag="0003|1|01101|cname:figure">数据结构</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/model/" cgid="180" jktag="0003|1|01101|cname:model">设计模式</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/software/" cgid="181" jktag="0003|1|01101|cname:software">软件工程</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/devtools/" cgid="30" jktag="0003|1|01101|cname:devtools">开发工具</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/git/" cgid="183" jktag="0003|1|01101|cname:git">Git/Github</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/svn/" cgid="184" jktag="0003|1|01101|cname:svn">SVN</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/vi/" cgid="185" jktag="0003|1|01101|cname:vi">VI</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/devstd/" cgid="31" jktag="0003|1|01101|cname:devstd">开放标准</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/opencl/" cgid="186" jktag="0003|1|01101|cname:opencl">OpenCL</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/xml/" cgid="187" jktag="0003|1|01101|cname:xml">Open XML</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/gles/" cgid="188" jktag="0003|1|01101|cname:gles">OpenGL/GLES</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="5" href="http://www.jikexueyuan.com/course/clouddata/" jktag="0003|1|01100|cname:clouddata">云计算&amp;大数据</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/cloudcompute/" cgid="32" jktag="0003|1|01101|cname:cloudcompute">云计算</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/openstack/" cgid="189" jktag="0003|1|01101|cname:openstack">OpenStack</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/docker/" cgid="191" jktag="0003|1|01101|cname:docker">Docker</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/cloudstack/" cgid="197" jktag="0003|1|01101|cname:cloudstack">CloudStack</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/windowsazure/" cgid="378" jktag="0003|1|01101|cname:windowsazure">Windows Azure</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/Iaas/" cgid="389" jktag="0003|1|01101|cname:Iaas">IaaS</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/bigdata/" cgid="33" jktag="0003|1|01101|cname:bigdata">大数据</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/hadoop/" cgid="198" jktag="0003|1|01101|cname:hadoop">Hadoop</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/storm/" cgid="200" jktag="0003|1|01101|cname:storm">Storm</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/hive/" cgid="204" jktag="0003|1|01101|cname:hive">Hive</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/kafka/" cgid="208" jktag="0003|1|01101|cname:kafka">Kafka</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/hbase/" cgid="211" jktag="0003|1|01101|cname:hbase">Hbase</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/spark/" cgid="213" jktag="0003|1|01101|cname:spark">Spark</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/Informationretrieval/" cgid="377" jktag="0003|1|01101|cname:Informationretrieval">信息检索</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/dataanalysis/" cgid="383" jktag="0003|1|01101|cname:dataanalysis">数据分析</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/virtual/" cgid="34" jktag="0003|1|01101|cname:virtual">虚拟化</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/vmware/" cgid="220" jktag="0003|1|01101|cname:vmware">VMware</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="6" href="http://www.jikexueyuan.com/course/intellegence/" jktag="0003|1|01100|cname:intellegence">智能硬件&amp;物联网</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/hardware/" cgid="35" jktag="0003|1|01101|cname:hardware">硬件架构</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/c51/" cgid="222" jktag="0003|1|01101|cname:c51">C51</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/armframe/" cgid="223" jktag="0003|1|01101|cname:armframe">ARM</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/keil/" cgid="226" jktag="0003|1|01101|cname:keil">Keil</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/cortex-m/" cgid="228" jktag="0003|1|01101|cname:cortex-m">Cortex-M</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/cortex-a/" cgid="229" jktag="0003|1|01101|cname:cortex-a">Cortex-A</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/avr/" cgid="379" jktag="0003|1|01101|cname:avr">AVR</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/iot/" cgid="36" jktag="0003|1|01101|cname:iot">物联网操作系统</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/rtos/" cgid="231" jktag="0003|1|01101|cname:rtos">RTOS</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/androidwear/" cgid="233" jktag="0003|1|01101|cname:androidwear">Android Wear</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/applewatchkit/" cgid="236" jktag="0003|1|01101|cname:applewatchkit">Apple Watchkit</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/open/" cgid="37" jktag="0003|1|01101|cname:open">开源硬件平台</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/arduino/" cgid="237" jktag="0003|1|01101|cname:arduino">Arduino</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/pibow/" cgid="238" jktag="0003|1|01101|cname:pibow">树莓派</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/mbed/" cgid="239" jktag="0003|1|01101|cname:mbed">mbed</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/goKit/" cgid="242" jktag="0003|1|01101|cname:goKit">GoKit</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/link/" cgid="38" jktag="0003|1|01101|cname:link">通信链接技术</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/wifi/" cgid="243" jktag="0003|1|01101|cname:wifi">无线WiFi</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/tel/" cgid="244" jktag="0003|1|01101|cname:tel">移动通信</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/bluetooth/" cgid="245" jktag="0003|1|01101|cname:bluetooth">蓝牙</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/nfc/" cgid="247" jktag="0003|1|01101|cname:nfc">NFC</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/infosense/" cgid="39" jktag="0003|1|01101|cname:infosense">信息感知处理技术</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/sensor/" cgid="251" jktag="0003|1|01101|cname:sensor">传感器</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/dig/" cgid="255" jktag="0003|1|01101|cname:dig">数据挖掘</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/hci/" cgid="40" jktag="0003|1|01101|cname:hci">人机交互技术</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/asr/" cgid="257" jktag="0003|1|01101|cname:asr">语音识别</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/face/" cgid="259" jktag="0003|1|01101|cname:face">人脸识别</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/gesture/" cgid="261" jktag="0003|1|01101|cname:gesture">手势识别</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="7" href="http://www.jikexueyuan.com/course/db/" jktag="0003|1|01100|cname:db">数据库</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/sql/" cgid="41" jktag="0003|1|01101|cname:sql">SQL</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/mysql/" cgid="262" jktag="0003|1|01101|cname:mysql">MySQL</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/sqlserver/" cgid="263" jktag="0003|1|01101|cname:sqlserver">SQL Server</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/oracledb/" cgid="264" jktag="0003|1|01101|cname:oracledb">Oracle</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/sqlite/" cgid="265" jktag="0003|1|01101|cname:sqlite">SQLite</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/postgresql/" cgid="266" jktag="0003|1|01101|cname:postgresql">PostgreSQL</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/db2/" cgid="267" jktag="0003|1|01101|cname:db2">DB2</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/nosql/" cgid="42" jktag="0003|1|01101|cname:nosql">NoSQL</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/cassandra/" cgid="212" jktag="0003|1|01101|cname:cassandra">Cassandra</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/redis/" cgid="269" jktag="0003|1|01101|cname:redis">Redis</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/mongoDB/" cgid="271" jktag="0003|1|01101|cname:mongoDB">MongoDB</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="8" href="http://www.jikexueyuan.com/course/certificate/" jktag="0003|1|01100|cname:certificate">认证考试</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/exam/" cgid="43" jktag="0003|1|01101|cname:exam">计算机等级考试</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/first/" cgid="275" jktag="0003|1|01101|cname:first">一级</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/secc/" cgid="276" jktag="0003|1|01101|cname:secc">二级C</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/secjava/" cgid="277" jktag="0003|1|01101|cname:secjava">二级Java</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/seccpp/" cgid="278" jktag="0003|1|01101|cname:seccpp">二级C++</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/networking/" cgid="281" jktag="0003|1|01101|cname:networking">网络工程师</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/dba/" cgid="282" jktag="0003|1|01101|cname:dba">数据库工程师</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/secure/" cgid="283" jktag="0003|1|01101|cname:secure">信息安全工程师</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/enterprise/" cgid="45" jktag="0003|1|01101|cname:enterprise">企业认证</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/cisco/" cgid="298" jktag="0003|1|01101|cname:cisco">思科认证</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/oracle/" cgid="299" jktag="0003|1|01101|cname:oracle">Oracle认证</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/linux/" cgid="301" jktag="0003|1|01101|cname:linux">Linux认证</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/arm/" cgid="302" jktag="0003|1|01101|cname:arm">ARM认证</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="9" href="http://www.jikexueyuan.com/course/enterpriseit/" jktag="0003|1|01100|cname:enterpriseit">企业 IT</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/operation/" cgid="46" jktag="0003|1|01101|cname:operation">运维管理</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/shellmaintain/" cgid="303" jktag="0003|1|01101|cname:shellmaintain">Shell</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/auto/" cgid="304" jktag="0003|1|01101|cname:auto">自动化运维</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/nginx/" cgid="305" jktag="0003|1|01101|cname:nginx">Nginx</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/apache/" cgid="308" jktag="0003|1|01101|cname:apache">Apache</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/operationmonitor/" cgid="380" jktag="0003|1|01101|cname:operationmonitor">运维监控</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/os/" cgid="48" jktag="0003|1|01101|cname:os">操作系统</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/linuxsys/" cgid="311" jktag="0003|1|01101|cname:linuxsys">Linux</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/windows/" cgid="312" jktag="0003|1|01101|cname:windows">Windows</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/macos/" cgid="313" jktag="0003|1|01101|cname:macos">Mac OS</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/enterpriseservice/" cgid="384" jktag="0003|1|01101|cname:enterpriseservice">企业服务</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/b2c/" cgid="385" jktag="0003|1|01101|cname:b2c">B2C</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-        <li>
-            <div>
-                <a cgid="11" href="http://www.jikexueyuan.com/course/productdesign/" jktag="0003|1|01100|cname:productdesign">设计&amp;产品&amp;测试</a>
-                <div class="lesson-list-show" style="width: 401px;">
-                    <div style="width: 400px;">
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/designbase/" cgid="51" jktag="0003|1|01101|cname:designbase">设计基础</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/photoshop/" cgid="327" jktag="0003|1|01101|cname:photoshop">Photoshop</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/flash/" cgid="329" jktag="0003|1|01101|cname:flash">Flash</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/illustrator/" cgid="330" jktag="0003|1|01101|cname:illustrator">Illustrator</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/sketch/" cgid="331" jktag="0003|1|01101|cname:sketch">Sketch</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/gamedesign/" cgid="52" jktag="0003|1|01101|cname:gamedesign">游戏设计</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/interface/" cgid="336" jktag="0003|1|01101|cname:interface">界面设计</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/role/" cgid="338" jktag="0003|1|01101|cname:role">角色设计</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/pm/" cgid="54" jktag="0003|1|01101|cname:pm">产品经理</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/demand/" cgid="341" jktag="0003|1|01101|cname:demand">需求分析</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/axure/" cgid="343" jktag="0003|1|01101|cname:axure">Axure</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/item/" cgid="344" jktag="0003|1|01101|cname:item">项目实战</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/vd/" cgid="362" jktag="0003|1|01101|cname:vd">视觉设计</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/appui/" cgid="340" jktag="0003|1|01101|cname:appui">应用UI设计</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/webui/" cgid="363" jktag="0003|1|01101|cname:webui">网页UI设计</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/dt/" cgid="364" jktag="0003|1|01101|cname:dt">设计理论</a>
-                                
-                                <a href="http://www.jikexueyuan.com/course/gd/" cgid="365" jktag="0003|1|01101|cname:gd">图形设计</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                        <dl>
-                            <dt><a href="http://www.jikexueyuan.com/course/testtools/" cgid="50" jktag="0003|1|01101|cname:testtools">测试工具</a></dt>
-                            <dd class="cf">
-                                
-                                <a href="http://www.jikexueyuan.com/course/autotest/" cgid="325" jktag="0003|1|01101|cname:autotest">自动化测试</a>
-                                
-                            </dd>
-                        </dl>
-                        
-                    </div>
-                </div>
-            </div>
-        </li>
-        
-    </ul>
-    </div>
 
 
-        <div class="lesson-center-focus">
-             <div class="index-banner">
-    <div class="swiper-container banner-box" style="cursor: -webkit-grab;">
-        <span id="banner-left" class="arrow-left" style="display: none;"></span>
-        <span id="banner-right" class="arrow-right" style="display: none;"></span>
-        <div class="swiper-wrapper" style="width: 3920px; height: 260px; transform: translate3d(-2800px, 0px, 0px); transition-duration: 1s;"><a href="http://e.jikexueyuan.com/invite/invite.html?huodong=invite_shouye_banner" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/07/d3f9/5664eaf706121.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);" jktag="0003|2|02100|picid:41">
-                 	
-
+            <div class="lesson-center-focus">
+            <div class="index-banner">
+            <div class="swiper-container banner-box" style="cursor: -webkit-grab;">
+                <span id="banner-left" class="arrow-left" style="display: none;"></span>
+                <span id="banner-right" class="arrow-right" style="display: none;"></span>
+                <div class="swiper-wrapper" style="width: 3920px; height: 260px; transform: translate3d(-2800px, 0px, 0px); transition-duration: 1s;">
+                    <a href="#" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/07/d3f9/5664eaf706121.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);">
                         <div class="swiper-box">
                             <div class="banner-infor"> </div>
                         </div>
                     </a>
-
-                 
                  	
-                 		<a href="http://jiuye.jikexueyuan.com/train/web?huodong=jiuye_web_shouye_banner_0910" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/31/a9d4/5684872045c31.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);" jktag="0003|2|02100|picid:47">
+                 	<a href="#" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/31/a9d4/5684872045c31.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);">
+                        <div class="swiper-box">
+                            <div class="banner-infor"> </div>
+                        </div>
+                    </a>
                  	
-
+                 	<a href="#" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/29/2de2/5682601ec9ed1.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);">
+                        <div class="swiper-box">
+                            <div class="banner-infor"> </div>
+                        </div>
+                    </a>
+                 	
+                 	<a href="#" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/23/4597/567a2c2f10262.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);">
                         <div class="swiper-box">
                             <div class="banner-infor"> </div>
                         </div>
                     </a>
                  
+                    <a href="#" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/23/9a03/567a2bf88a10e.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);">
+                        <div class="swiper-box">
+                            <div class="banner-infor"> </div>
+                        </div>
+                    </a>
                  	
-                 		<a href="http://huodong.jikexueyuan.com/younijihao?huodong=jiaofu_shouye_banner_1229#game" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/29/2de2/5682601ec9ed1.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);" jktag="0003|2|02100|picid:13">
-                 	
-
+                 	<a href="#" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-visible swiper-slide-active" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/07/d3f9/5664eaf706121.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);">
                         <div class="swiper-box">
                             <div class="banner-infor"> </div>
                         </div>
                     </a>
                  
-                 	
-                 		<a href="http://jiuye.jikexueyuan.com/train/javaweb?huodong=jiuye_javaweb_shouye_banner" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/23/4597/567a2c2f10262.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);" jktag="0003|2|02100|picid:35">
-                 	
-
+                    <a href="#" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/31/a9d4/5684872045c31.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);">
                         <div class="swiper-box">
                             <div class="banner-infor"> </div>
                         </div>
                     </a>
-                 
-                 	
-                 		<a href="http://jiuye.jikexueyuan.com/train/android?huodong=jiuye_android_shouye_banner" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/23/9a03/567a2bf88a10e.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);" jktag="0003|2|02100|picid:48">
-                 	
+                </div>
 
-                        <div class="swiper-box">
-                            <div class="banner-infor"> </div>
-                        </div>
-                    </a>
-                 
-                 	
-                 		<a href="http://e.jikexueyuan.com/invite/invite.html?huodong=invite_shouye_banner" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-visible swiper-slide-active" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/07/d3f9/5664eaf706121.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);" jktag="0003|2|02100|picid:41">
-                 	
-
-                        <div class="swiper-box">
-                            <div class="banner-infor"> </div>
-                        </div>
-                    </a>
-                 
-         <a href="http://jiuye.jikexueyuan.com/train/web?huodong=jiuye_web_shouye_banner_0910" target="_blank" class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate" style="width: 560px; height: 260px; background: url(&quot;http://a1.jikexueyuan.com/home/201512/31/a9d4/5684872045c31.jpg&quot;) 50% 50% no-repeat rgb(53, 181, 88);" jktag="0003|2|02100|picid:47">
-                 	
-
-                        <div class="swiper-box">
-                            <div class="banner-infor"> </div>
-                        </div>
-                    </a></div>
-         <div class="pagination"><span class="swiper-pagination-switch"></span><span class="swiper-pagination-switch"></span><span class="swiper-pagination-switch"></span><span class="swiper-pagination-switch"></span><span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span></div>
-    </div>
-    </div>
- 
+                <div class="pagination">
+                    <span class="swiper-pagination-switch"></span>
+                    <span class="swiper-pagination-switch"></span>
+                    <span class="swiper-pagination-switch"></span>
+                    <span class="swiper-pagination-switch"></span>
+                    <span class="swiper-pagination-switch swiper-visible-switch swiper-active-switch"></span>
+                </div>
+            </div>
+            </div>
 
             <div class="focuswork-wrap swiper-container">
-    <a href="javascript:;" id="work-left" class="arrow arrow-left" style="display: none;"></a>
-    <a href="javascript:;" id="work-right" class="arrow arrow-right" style="display: none;"></a>
-    <ul class="lesson-list swiper-wrapper" style="width: 1866.67px; height: 100px; transform: translate3d(-560px, 0px, 0px); transition-duration: 0s;"><li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
-    <a href="http://jiuye.jikexueyuan.com/train/android?huodong=jiuye_android_in" class="lession-item" target="_blank" jktag="0003|2|02101|classid:0">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://wirrorcdn.jikexueyuan.com/picture/android.png" alt="" class="lession-icon">
-        <p class="lession-title">Android开发工程师</p>
-        <p class="intro">
-            挑战月薪2万的工作机会
-        </p>
-    </a>
-    </li><li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
-    <a href="http://jiuye.jikexueyuan.com/train/javaweb?huodong=jiuye_javaweb_in" class="lession-item" target="_blank" jktag="0003|2|02101|classid:49">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://a1.jikexueyuan.com/home/201512/04/2b66/5661021bd07e6.jpg" alt="" class="lession-icon">
-        <p class="lession-title">JavaWeb开发工程师</p>
-        <p class="intro">
-            Java人才4个月极速进阶
-        </p>
-    </a>
-    </li><li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
-    <a href="http://jiuye.jikexueyuan.com/?huodong=jiuye_all_in" class="lession-item" target="_blank" jktag="0003|2|02101|classid:49">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://a1.jikexueyuan.com/home/201512/04/b1e4/56615f22aa6eb.jpg" alt="" class="lession-icon">
-        <p class="lession-title">极客学院就业班</p>
-        <p class="intro">
-            0基础 | 4个月 | 100%保就业
-        </p>
-    </a>
-    </li>
+                <a href="#" id="work-left" class="arrow arrow-left" style="display: none;"></a>
+                <a href="#" id="work-right" class="arrow arrow-right" style="display: none;"></a>
+                    <ul class="lesson-list swiper-wrapper" style="width: 1866.67px; height: 100px; transform: translate3d(-560px, 0px, 0px); transition-duration: 0s;">
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/android.png" alt="" class="lession-icon">
+                                <p class="lession-title">Android开发工程师</p>
+                                <p class="intro">挑战月薪2万的工作机会</p>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/5661021bd07e6.jpg" alt="" class="lession-icon">
+                                <p class="lession-title">JavaWeb开发工程师</p>
+                                <p class="intro">Java人才4个月极速进阶</p>
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/56615f22aa6eb.jpg" alt="" class="lession-icon">
+                                <p class="lession-title">极客学院就业班</p>
+                                <p class="intro">0基础 | 4个月 | 100%保就业</p>
+                            </a>
+                        </li>
         
-            <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-visible swiper-slide-active" style="width: 186.667px; height: 100px;" stop="1">
-    <a href="http://jiuye.jikexueyuan.com/train/web?huodong=jiuye_web_in" jktag="0003|2|02101|classid:45" class="lession-item" target="_blank">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://wirrorcdn.jikexueyuan.com/picture/html.png" alt="" class="lession-icon">
-        <p class="lession-title">HTML5/Web前端工程师</p>
-        <p class="intro">
-            BAT大牛亲自授课
-        </p>
-    </a>
-    </li>
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-visible swiper-slide-active" style="width: 186.667px; height: 100px;" stop="1">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/html.png" alt="" class="lession-icon">
+                                <p class="lession-title">HTML5/Web前端工程师</p>
+                                <p class="intro">BAT大牛亲自授课</p>
+                            </a>
+                        </li>
 
-<li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-visible" style="width: 186.667px; height: 100px;" stop="1">
-    <a href="http://jiuye.jikexueyuan.com/train/android?huodong=jiuye_android_in" class="lession-item" target="_blank" jktag="0003|2|02101|classid:0">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://wirrorcdn.jikexueyuan.com/picture/android.png" alt="" class="lession-icon">
-        <p class="lession-title">Android开发工程师</p>
-        <p class="intro">
-            挑战月薪2万的工作机会
-        </p>
-    </a>
-</li>
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-visible" style="width: 186.667px; height: 100px;" stop="1">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/android.png" alt="" class="lession-icon">
+                                <p class="lession-title">Android开发工程师</p>
+                                <p class="intro">挑战月薪2万的工作机会</p>
+                            </a>
+                        </li>
 
-<li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-visible" style="width: 186.667px; height: 100px;" stop="1">
-    <a href="http://jiuye.jikexueyuan.com/train/javaweb?huodong=jiuye_javaweb_in" class="lession-item" target="_blank" jktag="0003|2|02101|classid:49">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://a1.jikexueyuan.com/home/201512/04/2b66/5661021bd07e6.jpg" alt="" class="lession-icon">
-        <p class="lession-title">JavaWeb开发工程师</p>
-        <p class="intro">
-            Java人才4个月极速进阶
-        </p>
-    </a>
-</li>
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-visible" style="width: 186.667px; height: 100px;" stop="1">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/5661021bd07e6.jpg" alt="" class="lession-icon">
+                                <p class="lession-title">JavaWeb开发工程师</p>
+                                <p class="intro">Java人才4个月极速进阶</p>
+                            </a>
+                        </li>
 
-<li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
-    <a href="http://jiuye.jikexueyuan.com/?huodong=jiuye_all_in" class="lession-item" target="_blank" jktag="0003|2|02101|classid:49">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://a1.jikexueyuan.com/home/201512/04/b1e4/56615f22aa6eb.jpg" alt="" class="lession-icon">
-        <p class="lession-title">极客学院就业班</p>
-        <p class="intro">
-            0基础 | 4个月 | 100%保就业
-        </p>
-    </a>
-</li>
-        
-    <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
-    <a href="http://jiuye.jikexueyuan.com/train/web?huodong=jiuye_web_in" jktag="0003|2|02101|classid:45" class="lession-item" target="_blank">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://wirrorcdn.jikexueyuan.com/picture/html.png" alt="" class="lession-icon">
-        <p class="lession-title">HTML5/Web前端工程师</p>
-        <p class="intro">
-            BAT大牛亲自授课
-        </p>
-    </a>
-</li><li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
-    <a href="http://jiuye.jikexueyuan.com/train/android?huodong=jiuye_android_in" class="lession-item" target="_blank" jktag="0003|2|02101|classid:0">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://wirrorcdn.jikexueyuan.com/picture/android.png" alt="" class="lession-icon">
-        <p class="lession-title">Android开发工程师</p>
-        <p class="intro">
-            挑战月薪2万的工作机会
-        </p>
-    </a>
-</li><li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
-    <a href="http://jiuye.jikexueyuan.com/train/javaweb?huodong=jiuye_javaweb_in" class="lession-item" target="_blank" jktag="0003|2|02101|classid:49">
-        <span class="status red">
-            <span class="shadow"></span>
-            
-        </span>
-        <img src="http://a1.jikexueyuan.com/home/201512/04/2b66/5661021bd07e6.jpg" alt="" class="lession-icon">
-        <p class="lession-title">JavaWeb开发工程师</p>
-        <p class="intro">
-            Java人才4个月极速进阶
-        </p>
-    </a>
-</li></ul>
-</div>
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/56615f22aa6eb.jpg" alt="" class="lession-icon">
+                                <p class="lession-title">极客学院就业班</p>
+                                <p class="intro">0基础 | 4个月 | 100%保就业</p>
+                            </a>
+                        </li>
+                                
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
+                            <a href="#n" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/html.png" alt="" class="lession-icon">
+                                <p class="lession-title">HTML5/Web前端工程师</p>
+                                <p class="intro">BAT大牛亲自授课</p>
+                            </a>
+                        </li>
 
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/android.png" alt="" class="lession-icon">
+                                <p class="lession-title">Android开发工程师</p>
+                                <p class="intro">挑战月薪2万的工作机会</p>
+                            </a>
+                        </li>
 
- 
-        </div>
-        <div class="lesson-right-show">
-    <div class="news">
-        <h3>快讯</h3>
-        <ul class="list">
-            
+                        <li class="swiper-slide swiper-slide4 swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate swiper-slide-duplicate" style="width: 186.667px; height: 100px;">
+                            <a href="#" class="lession-item" target="_blank">
+                                <span class="status red">
+                                    <span class="shadow"></span>
+                                </span>
+                                <img src="img/5661021bd07e6.jpg" alt="" class="lession-icon">
+                                <p class="lession-title">JavaWeb开发工程师</p>
+                                <p class="intro">Java人才4个月极速进阶</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+    <div class="lesson-right-show">
+        <div class="news">
+            <h3>快讯</h3>
+            <ul class="list">
                 <li class="item">
-	<a href="http://huodong.jikexueyuan.com/younijihao?huodong=jiaofu_kuaixun_1229#game" target="_blank" jktag="0003|3|03100" style="color:red">
-		全员围观，500元红包疯抢ing
-	</a>
-</li>
-
-<li class="item">
-	<a href="http://huodong.jikexueyuan.com/2015choujiang?huodong=choujiang_shouye_kuaixun_1222" target="_blank" jktag="0003|3|03100" style="color:red">
-		新用户注册抽奖，100%中奖
-	</a>
-</li>
-
-
-<li class="item">
-	<a href="http://wiki.jikexueyuan.com/?huodong=wiki2.0_shouye_kuaixun" target="_blank" jktag="0003|3|03100">
-		Wiki 2.0重磅上线！
-	</a>
-</li>
-
-
-<li class="item">
-	<a href="http://qun.jikexueyuan.com/activity/topic/277?huodong=shequn_shouye_kuaixun" target="_blank" jktag="0003|3|03100">
-		干货征集令-大奖揭晓 速来领奖
-	</a>
-</li>
-
-
-            
-        </ul>
-    </div>
-    <div class="userinfo cf">
-        <div class="head-box">
-            
-                    <img width="40" src="http://assets.jikexueyuan.com/user/avtar/default.gif" class="diaLoginBtn" jktag="0003|4|04100">
-            
+                	<a href="#" target="_blank" style="color:red">
+                		全员围观，500元红包疯抢ing
+                	</a>
+                </li>
+                <li class="item">
+                	<a href="#" target="_blank" style="color:red">
+                		新用户注册抽奖，100%中奖
+                	</a>
+                </li>
+                <li class="item">
+                	<a href="#" target="_blank">
+                		Wiki 2.0重磅上线！
+                	</a>
+                </li>
+                <li class="item">
+                	<a href="#" target="_blank">
+                		干货征集令-大奖揭晓 速来领奖
+                	</a>
+                </li>
+            </ul>
         </div>
-        <div class="name-wrap">
-            <div class="hello-word">
-            
-                <span class="word">Hi! 你好
-                <p class="sentence">欢迎来到极客学院</p>
-            
-            </span></div>
-            
-            <div class="operate cf">
-            
-                <a href="javascript:;" class="login-btn diaLoginBtn" jktag="0003|4|04101">登录</a>
-                <a href="javascript:;" class="register-btn diaRegBtn" jktag="0003|4|04102" style="width: 70px;">有奖注册</a>
-            
+        <div class="userinfo cf">
+            <div class="head-box">
+                <img width="40" src="img/default.gif" class="diaLoginBtn">
+            </div>
+            <div class="name-wrap">
+                <div class="hello-word">
+                    <span class="word">Hi! 你好
+                        <p class="sentence">欢迎来到极客学院</p>
+                    </span>
+                </div>
+                <div class="operate cf">
+                    <a href="#" class="login-btn diaLoginBtn">登录</a>
+                    <a href="#" class="register-btn diaRegBtn" style="width: 70px;">有奖注册</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="recommend">
+        <div class="recommend">
         <ul class="start-list cf" node-type="recommend-start-list" style="display: block;">
             <li node-type="recommend-move-event">
                 <span class="question icon"></span>
@@ -1127,25 +862,25 @@
                 <span class="angle-bottom"></span>
             </li>
             <li>
-                <a href="http://download.jikexueyuan.com/" jktag="0003|5|05104">
+                <a href="#">
                     <span class="download icon"></span>
                     <span class="title">下载</span>
                 </a>
             </li>
             <li>
-                <a href="http://www.jikexueyuan.com/path/" jktag="0003|5|05105">
+                <a href="#">
                     <span class="known icon"></span>
                     <span class="title">知识</span>
                 </a>
             </li>
             <li>
-                <a href="http://ke.jikexueyuan.com/zhiye/" jktag="0003|5|05106">
+                <a href="#">
                     <span class="occupation icon"></span>
                     <span class="title">职业</span>
                 </a>
             </li>
             <li>
-                <a href="http://www.jikexueyuan.com/vip/" jktag="0003|5|05107">
+                <a href="#">
                     <span class="vip icon"></span>
                     <span class="title">VIP</span>
                 </a>
@@ -1160,124 +895,123 @@
             </ul>
             <div class="content" node-type="recommend-content-box">
                 <ul class="question tab-content" node-type="recommend-tab-content" style="display: none;">
-                    
-                        <li>
-	<a href="http://wenda.jikexueyuan.com/question/26076/" target="_blank" jktag="0003|5|05100|wdid:26076">
-		<img width="16" src="http://a1.jikexueyuan.com/home/201411/03/171a/54578ddd8e62a.png">
-		<span class="title">【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
-	</a>
-</li>
-<li>
-	<a href="http://wenda.jikexueyuan.com/question/27538/" target="_blank" jktag="0003|5|05100|wdid:27538">
-		<img width="16" src="http://a1.jikexueyuan.com/home/201502/26/c2a9/54eeb7cba8791.png">
-		<span class="title">Bootstrap 最新版 V4 中文文档</span>
-	</a>
-</li>
-<li>
-	<a href="http://wenda.jikexueyuan.com/question/28716/" target="_blank">
-		<img width="16" src="http://wirrorcdn.jikexueyuan.com/category/devbase.png" jktag="0003|5|05100|wdid:28716">
-		<span class="title">【老师分享】对LPS的Manacher算法感兴趣的同学请</span>
-	</a>
-</li>
-<li>
-	<a href="http://wenda.jikexueyuan.com/question/10726/" target="_blank" jktag="0003|5|05100|wdid:10726">
-		<img width="16" src="http://wirrorcdn.jikexueyuan.com/category/games.png">
-		<span class="title">build_native.py时报错</span>
-	</a>
-</li>
-<li>
-	<a href="http://wenda.jikexueyuan.com/question/372/" target="_blank" jktag="0003|5|05100|wdid:372">
-		<img width="16" src="http://wirrorcdn.jikexueyuan.com/category/mobile.png">
-		<span class="title">超级菜鸟想成为怎么成长？</span>
-	</a>
-</li>
-                    
+                    <li>
+	                    <a href="#" target="_blank">
+                    		<img width="16" src="img/54578ddd8e62a.png">
+                    		<span class="title">【问答技巧】怎样提问才能让我的问题更快速被解答？</span>
+                    	</a>
+                    </li>
+                    <li>
+                    	<a href="#" target="_blank">
+                    		<img width="16" src="http://a1.jikexueyuan.com/home/201502/26/c2a9/54eeb7cba8791.png">
+                    		<span class="title">Bootstrap 最新版 V4 中文文档</span>
+                    	</a>
+                    </li>
+                    <li>
+                    	<a href="#" target="_blank">
+                    		<img width="16" src="img/devbase.png">
+                    		<span class="title">【老师分享】对LPS的Manacher算法感兴趣的同学请</span>
+                    	</a>
+                    </li>
+                    <li>
+                    	<a href="#" target="_blank">
+                    		<img width="16" src="img/games.png">
+                    		<span class="title">build_native.py时报错</span>
+                    	</a>
+                    </li>
+                    <li>
+                    	<a href="#" target="_blank">
+                    		<img width="16" src="img/mobile.png">
+                    		<span class="title">超级菜鸟想成为怎么成长？</span>
+                    	</a>
+                    </li>
                 </ul>
-                    <div id="recommendWiki">                <ul class="wiki cf tab-content" node-type="recommend-tab-content" style="display: none;">
-                    
+
+                <div id="recommendWiki">
+                    <ul class="wiki cf tab-content" node-type="recommend-tab-content" style="display: none;">
                         <li>
-                            <a href="http://wiki.jikexueyuan.com/project/ios-human-interface-guidelines/?hmsr=www_index_wiki" target="_blank" jktag="0003|5|05101|wid:83">
-                                <img src="http://wikicdn.jikexueyuan.com/cover/recommend/dc49a349294041e181dec66d490e06c8.jpg" class="picture">
+                            <a href="#" target="_blank">
+                                <img src="img/dc49a349294041e181dec66d490e06c8.jpg" class="picture">
                                 <p class="title">iOS人机交互指南</p>
                             </a>
                         </li>
                     
                         <li>
-                            <a href="http://wiki.jikexueyuan.com/project/struts-2/?hmsr=www_index_wiki" target="_blank" jktag="0003|5|05101|wid:215">
-                                <img src="http://wikicdn.jikexueyuan.com/cover/recommend/411b49d1966f4447bd6a1229d5cf037d.jpg" class="picture">
+                            <a href="#" target="_blank">
+                                <img src="img/411b49d1966f4447bd6a1229d5cf037d.jpg" class="picture">
                                 <p class="title">Struts 2 教程</p>
                             </a>
                         </li>
                     
                         <li>
-                            <a href="http://wiki.jikexueyuan.com/project/php/?hmsr=www_index_wiki" target="_blank" jktag="0003|5|05101|wid:269">
-                                <img src="http://wikicdn.jikexueyuan.com/cover/recommend/7f54e47e22b141a0a9fa1cdaf13829a0.jpg" class="picture">
+                            <a href="#" target="_blank">
+                                <img src="img/7f54e47e22b141a0a9fa1cdaf13829a0.jpg" class="picture">
                                 <p class="title">PHP 新手指南</p>
                             </a>
                         </li>
-                    
-                         </ul>
-                    </div>
-                    <div id="recommendLession">                <ul class="lession cf tab-content" node-type="recommend-tab-content" style="display: none;">
-                    
-                    <li>
-                        <a href="http://www.jikexueyuan.com/path/html5/" target="_blank" jktag="0003|5|05102|cslug:html5">
-                            <img src="http://wirrorcdn.jikexueyuan.com/picture/html.png" class="picture">
-                            <p class="title">HTML5开发</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://www.jikexueyuan.com/path/android/" target="_blank" jktag="0003|5|05102|cslug:android">
-                            <img src="http://wirrorcdn.jikexueyuan.com/picture/android.png" class="picture">
-                            <p class="title">Android</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://www.jikexueyuan.com/path/cocos2d-x/" target="_blank" jktag="0003|5|05102|cslug:cocos2d-x">
-                            <img src="http://wirrorcdn.jikexueyuan.com/picture/Cocos2d-x.png" class="picture">
-                            <p class="title">Cocos2d-x游戏开发</p>
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="http://www.jikexueyuan.com/path/java/" target="_blank" jktag="0003|5|05102|cslug:java">
-                            <img src="http://wirrorcdn.jikexueyuan.com/picture/Java.png" class="picture">
-                            <p class="title">Java语言</p>
-                        </a>
-                    </li>
-                    
-                        </ul>
-                    </div>
-                    <div id="recommendGroup">
-                        <ul class="group tab-content" node-type="recommend-tab-content" style="display: block;">
-                    
-                    <li class="cf">
-                        <img src="http://qun.jikexueyuan.com/File/c58bb41944592a9e1bf334472e5c078d.png" alt="" class="picture">
-                        <div class="info">
-                            <p class="title">Android工程师</p>
-                            <p class="count">已有<span>398</span>人加入</p>
-                        </div>
-                        <a href="http://qun.jikexueyuan.com/android" class="join" target="_blank" jktag="0003|5|05103">＋ 加入</a>
-                    </li>
-                    
-                    <li class="cf">
-                        <img src="http://qun.jikexueyuan.com/File/b6b490c2efa84f1ea9ee435323118560.png" alt="" class="picture">
-                        <div class="info">
-                            <p class="title">Web大前端工程师</p>
-                            <p class="count">已有<span>468</span>人加入</p>
-                        </div>
-                        <a href="http://qun.jikexueyuan.com/web" class="join" target="_blank" jktag="0003|5|05103">＋ 加入</a>
-                    </li>
-                    
-                        </ul>
-                         </div>
-                     </div>
-                    </div>
+                    </ul>
                 </div>
+
+                <div id="recommendLession">
+                    <ul class="lession cf tab-content" node-type="recommend-tab-content" style="display: none;">
+                    
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="img/html.png" class="picture">
+                                <p class="title">HTML5开发</p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="img/android.png" class="picture">
+                                <p class="title">Android</p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="img/Cocos2d-x.png" class="picture">
+                                <p class="title">Cocos2d-x游戏开发</p>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" target="_blank">
+                                <img src="img/Java.png" class="picture">
+                                <p class="title">Java语言</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                    
+                <div id="recommendGroup">
+                    <ul class="group tab-content" node-type="recommend-tab-content" style="display: block;">
+                        <li class="cf">
+                            <img src="http://qun.jikexueyuan.com/File/c58bb41944592a9e1bf334472e5c078d.png" alt="" class="picture">
+                            <div class="info">
+                                <p class="title">Android工程师</p>
+                                <p class="count">已有<span>398</span>人加入</p>
+                            </div>
+                            <a href="#" class="join" target="_blank">＋ 加入</a>
+                        </li>
+                        
+                        <li class="cf">
+                            <img src="http://qun.jikexueyuan.com/File/b6b490c2efa84f1ea9ee435323118560.png" alt="" class="picture">
+                            <div class="info">
+                                <p class="title">Web大前端工程师</p>
+                                <p class="count">已有<span>468</span>人加入</p>
+                            </div>
+                            <a href="#" class="join" target="_blank">＋ 加入</a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
+    </div>
+    </div>
+    </div>
 	<div class="hot-lesson w-1000 mar-t30" id="recommendName">
          <ul class="cf">
              <li positionid="9" class="on">热门推荐</li>
@@ -1296,7 +1030,7 @@
                 <li id="2405" test="0" deg="0" stop="1">
                     <div class="lessonimg-box">
                         <a href="#" target="_blank">
-                            <img src="images/56833c018dc18.jpg" class="lessonimg" title="Material Design 之动画篇" alt="Material Design 之动画篇">
+                            <img src="img/56833c018dc18.jpg" class="lessonimg" title="Material Design 之动画篇" alt="Material Design 之动画篇">
                             <div class="lessonplay" style="opacity: 0;">
                                 <i class="playericon"></i>
                             </div>
@@ -1325,7 +1059,7 @@
                             <div class="cf">
                                 <div class="lessonicon-box" style="bottom: 4px;">
                                     <a href="#">
-                                        <img width="16" src="images/54578d8e652c3.png" alt="android" title="Android">
+                                        <img width="16" src="img/54578d8e652c3.png" alt="android" title="Android">
                                     </a>
                                 </div>
                             </div>
@@ -1336,7 +1070,7 @@
                 <li id="2402" test="0" deg="0" stop="1">
                     <div class="lessonimg-box">
                         <a href="#" target="_blank">
-                            <img src="http://a1.jikexueyuan.com/home/201512/29/bd3b/5681f1d9b90ab.jpg" class="lessonimg" title="综合案例：猫眼电影App产品原型设计" alt="综合案例：猫眼电影App产品原型设计">
+                            <img src="img/5681f1d9b90ab.jpg" class="lessonimg" title="综合案例：猫眼电影App产品原型设计" alt="综合案例：猫眼电影App产品原型设计">
                             <div class="lessonplay" style="opacity: 0;">
                                 <i class="playericon"></i>
                             </div>
@@ -1365,7 +1099,7 @@
                             <div class="cf">
                                 <div class="lessonicon-box" style="bottom: 4px;">
                                     <a href="#">
-                                        <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/pm.png" alt="axure" title="Axure">
+                                        <img width="16" src="img/pm.png" alt="axure" title="Axure">
                                     </a>
                                 </div>
                             </div>
@@ -1377,7 +1111,7 @@
                     <div class="lessonimg-box">
                         <i class="free-icon"></i> 
                         <a href="#" target="_blank">
-                            <img src="http://a1.jikexueyuan.com/home/201512/29/2e0f/568239e9d5ee5.jpg" class="lessonimg" title="Compass 初识" alt="Compass 初识">
+                            <img src="img/568239e9d5ee5.jpg" class="lessonimg" title="Compass 初识" alt="Compass 初识">
                             <div class="lessonplay" style="opacity: 0;">
                                 <i class="playericon"></i>
                             </div>
@@ -1406,7 +1140,7 @@
                             <div class="cf">
                                 <div class="lessonicon-box" style="bottom: 4px;">
                                     <a href="#">
-                                        <img width="16" src="images/webbase.png" alt="css3" title="CSS3">
+                                        <img width="16" src="img/webbase.png" alt="css3" title="CSS3">
                                     </a>
                                 </div>
                             </div>
@@ -1417,7 +1151,7 @@
                 <li id="2406" test="0" deg="0" stop="1">
                     <div class="lessonimg-box">
                         <a href="#" target="_blank">
-                            <img src="http://a1.jikexueyuan.com/home/201512/30/efd4/56833cf79910b.jpg" class="lessonimg" title="PHP 面向对象程序设计之抽象类与接口" alt="PHP 面向对象程序设计之抽象类与接口">
+                            <img src="img/56833cf79910b.jpg" class="lessonimg" title="PHP 面向对象程序设计之抽象类与接口" alt="PHP 面向对象程序设计之抽象类与接口">
                             <div class="lessonplay" style="opacity: 0;">
                                 <i class="playericon"></i>
                             </div>
@@ -1446,7 +1180,7 @@
                             <div class="cf">
                                 <div class="lessonicon-box" style="bottom: 4px;">
                                     <a href="#">
-                                        <img width="16" src="images/webbase.png" alt="phpbase" title="PHP 基础">
+                                        <img width="16" src="img/webbase.png" alt="phpbase" title="PHP 基础">
                                     </a>
                                 </div>
                             </div>
@@ -1457,7 +1191,7 @@
                 <li id="2404" test="0" deg="0" stop="1">
                     <div class="lessonimg-box">
                         <a href="#" target="_blank">
-                            <img src="http://a1.jikexueyuan.com/home/201512/30/c084/56833bc35c43b.jpg" class="lessonimg" title="C 语言编程实践：通讯录管理系统（上）" alt="C 语言编程实践：通讯录管理系统（上）">
+                            <img src="img/56833bc35c43b.jpg" class="lessonimg" title="C 语言编程实践：通讯录管理系统（上）" alt="C 语言编程实践：通讯录管理系统（上）">
                             <div class="lessonplay" style="opacity: 0;">
                                 <i class="playericon"></i>
                             </div>
@@ -1486,7 +1220,7 @@
                             <div class="cf">
                                 <div class="lessonicon-box" style="bottom: 4px;">
                                     <a href="#">
-                                        <img width="16" src="http://a1.jikexueyuan.com/home/201412/31/5d76/54a367ad6bae6.png" alt="c" title="C">
+                                        <img width="16" src="img/54a367ad6bae6.png" alt="c" title="C">
                                     </a>
                                 </div>
                             </div>
@@ -1497,7 +1231,7 @@
                 <li id="2401" test="0" deg="0" stop="1">
                     <div class="lessonimg-box">
                         <a href="#" target="_blank">
-                            <img src="http://a1.jikexueyuan.com/home/201512/29/d5c2/5681f1a6433ae.jpg" class="lessonimg" title="Android UiAutomator2 使用 Spoon 运行测试" alt="Android UiAutomator2 使用 Spoon 运行测试">
+                            <img src="img/5681f1a6433ae.jpg" class="lessonimg" title="Android UiAutomator2 使用 Spoon 运行测试" alt="Android UiAutomator2 使用 Spoon 运行测试">
                             <div class="lessonplay" style="opacity: 0;">
                                 <i class="playericon"></i>
                             </div>
@@ -1526,7 +1260,7 @@
                             <div class="cf">
                                 <div class="lessonicon-box" style="bottom: 4px;">
                                     <a href="#">
-                                        <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/testtools.png" alt="autotest" title="自动化测试">
+                                        <img width="16" src="img/testtools.png" alt="autotest" title="自动化测试">
                                     </a>
                                 </div>
                             </div>
@@ -1537,7 +1271,7 @@
                 <li id="2399" test="0" deg="0" stop="1">
                     <div class="lessonimg-box">
                         <a href="#" target="_blank">
-                            <img src="http://a1.jikexueyuan.com/home/201512/28/d889/5680954310fe6.jpg" class="lessonimg" title="Photon Mmo中的公用枚举" alt="Photon Mmo中的公用枚举">
+                            <img src="img/5680954310fe6.jpg" class="lessonimg" title="Photon Mmo中的公用枚举" alt="Photon Mmo中的公用枚举">
                             <div class="lessonplay" style="opacity: 0;">
                                 <i class="playericon"></i>
                             </div>
@@ -1566,7 +1300,7 @@
                             <div class="cf">
                                 <div class="lessonicon-box" style="bottom: 4px;">
                                     <a href="#">
-                                        <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/games.png" alt="unity3d" title="Unity3D">
+                                        <img width="16" src="img/games.png" alt="unity3d" title="Unity3D">
                                     </a>
                                 </div>
                             </div>
@@ -1577,7 +1311,7 @@
                 <li id="2397" test="0" deg="0" stop="1">
                     <div class="lessonimg-box">
                         <a href="#" target="_blank">
-                            <img src="http://a1.jikexueyuan.com/home/201512/28/95f1/56808fe2bcd70.jpg" class="lessonimg" title="Lambda 架构详解（中）" alt="Lambda 架构详解（中）">
+                            <img src="img/56808fe2bcd70.jpg" class="lessonimg" title="Lambda 架构详解（中）" alt="Lambda 架构详解（中）">
                             <div class="lessonplay" style="opacity: 0;">
                                 <i class="playericon"></i>
                             </div>
@@ -1606,7 +1340,7 @@
                             <div class="cf">
                                 <div class="lessonicon-box" style="bottom: 4px;">
                                     <a href="#">
-                                        <img width="16" src="http://wirrorcdn.jikexueyuan.com/category/bigdata.png" alt="storm" title="Storm">
+                                        <img width="16" src="img/bigdata.png" alt="storm" title="Storm">
                                     </a>
                                 </div>
                             </div>
@@ -4829,5 +4563,8 @@
 
 
     </div>   
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/lesson.js"></script>
 </body>
 </html>
