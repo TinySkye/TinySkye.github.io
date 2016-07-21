@@ -28,6 +28,8 @@
 		font-size: 20px;
 		font-weight: bold;
 		-webkit-animation: txt-ani 5s ease-in-out infinite;
+		-moz-animation: txt-ani 5s ease-in-out infinite;
+		-o-animation: txt-ani 5s ease-in-out infinite;
 	}
 	@-webkit-keyframes txt-ani{
 		0%{
@@ -50,6 +52,48 @@
 			color: red;
 		}
 	}
+	@-moz-keyframes txt-ani{
+		0%{
+			color: red;
+		}
+		25%{
+			-moz-transform: translateX(165%) translateY(0);
+			color: yellow;
+		}
+		50%{
+			-moz-transform: translateX(165%) translateY(1500%);
+			color: green;
+		}
+		75%{
+			-moz-transform: translateX(0px) translateY(1500%);
+			color: blue;
+		}
+		100%{
+			-moz-transform: translateX(0px) translateY(0px);
+			color: red;
+		}
+	}
+	@-o-keyframes txt-ani{
+		0%{
+			color: red;
+		}
+		25%{
+			-o-transform: translateX(165%) translateY(0);
+			color: yellow;
+		}
+		50%{
+			-o-transform: translateX(165%) translateY(1500%);
+			color: green;
+		}
+		75%{
+			-o-transform: translateX(0px) translateY(1500%);
+			color: blue;
+		}
+		100%{
+			-o-transform: translateX(0px) translateY(0px);
+			color: red;
+		}
+	}
 
 
 	/*魔方部分*/
@@ -60,6 +104,10 @@
 		margin: 200px auto 0 auto;
 		-webkit-transform-style: preserve-3d;
 		-webkit-animation: animation 5s ease-in-out infinite;
+		-moz-transform-style: preserve-3d;
+		-moz-animation: animation 5s ease-in-out infinite;
+		-o-transform-style: preserve-3d;
+		-o-animation: animation 5s ease-in-out infinite;
 	}
 	
 	.box .face{
@@ -69,21 +117,33 @@
 	}
 	#one{
 		-webkit-transform: translateZ(90px);
+		-moz-transform: translateZ(90px);
+		-o-transform: translateZ(90px);
 	}
 	#two{
 		-webkit-transform: rotateX(-90deg) translateZ(90px);
+		-moz-transform: rotateX(-90deg) translateZ(90px);
+		-o-transform: rotateX(-90deg) translateZ(90px);
 	}
 	#three{
 		-webkit-transform: rotateX(-180deg) translateZ(90px);
+		-moz-transform: rotateX(-180deg) translateZ(90px);
+		-o-transform: rotateX(-180deg) translateZ(90px);
 	}
 	#four{
 		-webkit-transform: rotateX(90deg) translateZ(90px);
+		-moz-transform: rotateX(90deg) translateZ(90px);
+		-o-transform: rotateX(90deg) translateZ(90px);
 	}
 	#five{
 		-webkit-transform: rotateY(-90deg) translateZ(90px);
+		-moz-transform: rotateY(-90deg) translateZ(90px);
+		-o-transform: rotateY(-90deg) translateZ(90px);
 	}
 	#six{
 		-webkit-transform: rotateY(90deg) translateZ(90px);
+		-moz-transform: rotateY(90deg) translateZ(90px);
+		-o-transform: rotateY(90deg) translateZ(90px);
 	}
 	.face div{
 		float: left;
@@ -118,6 +178,24 @@
 		50%{-webkit-transform: rotateX(-90deg) rotateY(270deg) rotateZ(90deg);}
 		66%{-webkit-transform: rotateX(90deg) rotateY(180deg) rotateZ(0deg);}
 		83%{-webkit-transform: rotateX(-90deg) rotateY(90deg) rotateZ(-90deg);}
+		100%{}
+	}
+	@-moz-keyframes animation{
+		0%{}
+		16%{-moz-transform: rotateX(-90deg) rotateY(90deg) rotateZ(0deg);}
+		33%{-moz-transform: rotateX(90deg) rotateY(180deg) rotateZ(90deg);}
+		50%{-moz-transform: rotateX(-90deg) rotateY(270deg) rotateZ(90deg);}
+		66%{-moz-transform: rotateX(90deg) rotateY(180deg) rotateZ(0deg);}
+		83%{-moz-transform: rotateX(-90deg) rotateY(90deg) rotateZ(-90deg);}
+		100%{}
+	}
+	@-o-keyframes animation{
+		0%{}
+		16%{-o-transform: rotateX(-90deg) rotateY(90deg) rotateZ(0deg);}
+		33%{-o-transform: rotateX(90deg) rotateY(180deg) rotateZ(90deg);}
+		50%{-o-transform: rotateX(-90deg) rotateY(270deg) rotateZ(90deg);}
+		66%{-o-transform: rotateX(90deg) rotateY(180deg) rotateZ(0deg);}
+		83%{-o-transform: rotateX(-90deg) rotateY(90deg) rotateZ(-90deg);}
 		100%{}
 	}
 
