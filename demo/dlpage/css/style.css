@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Microsoft YaHei;
+}
+#wrapper{
+	width: 100%;
+	height: 100%;
+}
+#head_img{
+	background: url(../images/bg_0.png) center no-repeat;
+	background-size: 100% 100%;
+}
+#description{
+	width: 100%;
+	margin-top: 6%;
+	background-color: #f0efef;
+}
+#description p{
+	letter-spacing: 1px;
+	padding-top: 3%;
+	padding-left: 10%;
+	padding-right: 12.5%;
+	line-height: 140%;
+	font-weight: 500;
+}
+
+
+
+.item{
+	width: 100%;
+	margin-top: 5%;
+}
+.item_bg{
+	text-indent: 3em;
+	letter-spacing: 1px;
+	margin: 0 auto;
+	font-weight: bold;
+	line-height: 280%;
+}
+.item_text{
+	letter-spacing: 1px;
+	line-height: 165%;
+	text-indent: 2em;
+	padding: 2.7% 11.6% 0 10%;
+	font-weight: 300;
+}
+#item_bg1{
+	background: url(../images/1.png) center no-repeat;
+	background-size: 100% 100%;
+}
+#item_bg2{
+	background: url(../images/2.png) center no-repeat;
+	background-size: 100% 100%;
+}
+#item_bg3{
+	background: url(../images/3.png) center no-repeat;
+	background-size: 100% 100%;
+}
+#item_bg4{
+	background: url(../images/4.png) center no-repeat;
+	background-size: 100% 100%;
+}
+#item_bg5{
+	background: url(../images/5.png) center no-repeat;
+	background-size: 100% 100%;
+}
+#item_bg6{
+	background: url(../images/6.png) center no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+#dl_btn{
+	margin: 12% auto 6% auto;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: 300;
+	color: #fff;
+	background-color: #3da3db;
+	box-shadow: 0 0 10px 0px #3da3db;
+	line-height: 280%;
+}
+#foot_text{
+	margin-bottom: 5%;
+	letter-spacing: 1px;
+	font-weight: 500;
+	text-align: center;
+}
+#foot{
+	width: 100%;
+	background-color: #3da3db;
+}
